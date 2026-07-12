@@ -2263,3 +2263,27 @@ h4 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* ============================================================
+   Mobile nav: product submenu accordion + tidy panel
+   ============================================================ */
+@media (max-width: 960px) {
+  .site-nav .menu-panel {
+    position: static;
+    min-width: 0;
+    padding: 0 0 6px 16px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .site-nav .nav-item:hover > .menu-panel,
+  .site-nav .nav-item:focus-within > .menu-panel {
+    display: none;
+  }
+  .site-nav .nav-item.sub-open > .menu-panel {
+    display: block;
+  }
+  .site-nav .nav-item.sub-open .nav-link .chev {
+    transform: rotate(180deg);
+  }
+}

@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -22,17 +22,52 @@ const productLinks = [
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [menuSuppressed, setMenuSuppressed] = useState(false);
+  const [subOpen, setSubOpen] = useState(false);
+  const headerRef = useRef(null);
   const pathname = usePathname();
+
+  // Close the mobile menu when clicking/tapping outside the header
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (e) => {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        setOpen(false);
+        setSubOpen(false);
+      }
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, [open]);
+
+  // Close menus after navigating to another page
+  useEffect(() => {
+    setOpen(false);
+    setSubOpen(false);
+  }, [pathname]);
 
   // Hide the dropdown right after a navigation click; re-arm on mouse leave.
   const closeMenu = (e) => {
     e.currentTarget.blur();
     setMenuSuppressed(true);
     setOpen(false);
+    setSubOpen(false);
+  };
+
+  // In the mobile menu the Product row toggles its submenu instead of navigating
+  const onProductClick = (e) => {
+    if (open) {
+      e.preventDefault();
+      setSubOpen((v) => !v);
+      return;
+    }
+    closeMenu(e);
   };
 
   return (
-    <header className={`site-header${open ? " nav-open" : ""}`}>
+    <header
+      ref={headerRef}
+      className={`site-header${open ? " nav-open" : ""}`}
+    >
       <div className="container nav-wrap">
         <Link href="/" className="logo-brand" aria-label="Kodeit Ascend home">
           <Image
@@ -53,12 +88,13 @@ export default function SiteHeader() {
             </Link>
           </div>
           <div
-            className={`nav-item${menuSuppressed ? " menu-suppressed" : ""}`}
+            className={`nav-item${menuSuppressed ? " menu-suppressed" : ""}${subOpen ? " sub-open" : ""}`}
             onMouseLeave={() => setMenuSuppressed(false)}
           >
             <Link
               href="/product"
-              onClick={closeMenu}
+              onClick={onProductClick}
+              aria-expanded={subOpen}
               className={`nav-link${pathname.startsWith("/product") ? " is-current" : ""}`}
             >
               Product
