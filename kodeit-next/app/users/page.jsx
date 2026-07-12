@@ -111,14 +111,14 @@ export default function UsersPage() {
         <section className="kd-section aw-section" id="roles">
           <img
             className="kd-deco"
-            src="/images/module-pattern.svg"
+            src="/ascend/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -60, top: 380, width: 210 }}
           />
           <img
             className="kd-deco"
-            src="/images/module-blurb-br.svg"
+            src="/ascend/images/module-blurb-br.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "1%", bottom: 60, width: 110 }}

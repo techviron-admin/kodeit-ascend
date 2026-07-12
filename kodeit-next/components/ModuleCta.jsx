@@ -1,18 +1,18 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function ModuleCta({ title, sub, label = "Talk to an expert" }) {
   return (
     <section className="md-cta-wrap">
       <img
         className="kd-deco"
-        src="/images/module-blurb-sm.svg"
+        src="/ascend/images/module-blurb-sm.svg"
         alt=""
         aria-hidden="true"
         style={{ left: "10%", top: -30, width: 49 }}
       />
       <img
         className="kd-deco"
-        src="/images/module-blurb-br.svg"
+        src="/ascend/images/module-blurb-br.svg"
         alt=""
         aria-hidden="true"
         style={{ right: "1%", top: -140, width: 120 }}

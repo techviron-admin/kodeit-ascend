@@ -77,14 +77,14 @@ export default function AssessmentsPage() {
         <section className="kd-section aw-section" id="workflow">
           <img
             className="kd-deco"
-            src="/images/module-pattern.svg"
+            src="/ascend/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -60, top: 320, width: 210 }}
           />
           <img
             className="kd-deco"
-            src="/images/sparkle-1.svg"
+            src="/ascend/images/sparkle-1.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "6%", top: 30, width: 54 }}
@@ -100,7 +100,7 @@ export default function AssessmentsPage() {
                   <div className="aw-left">
                     <span className="md-badge" style={{ background: tint }}>
                       <img
-                        src={`/images/${icon}`}
+                        src={`/ascend/images/${icon}`}
                         alt=""
                         width={58}
                         height={58}
@@ -116,7 +116,7 @@ export default function AssessmentsPage() {
                       chips.map(([chipIcon, label]) => (
                         <div className="aw-chip" key={label}>
                           <img
-                            src={`/images/${chipIcon}`}
+                            src={`/ascend/images/${chipIcon}`}
                             alt=""
                             width={44}
                             height={44}
@@ -127,7 +127,7 @@ export default function AssessmentsPage() {
                     ) : (
                       <div className="aw-results">
                         <Image
-                          src="/images/results-strip-1e1b74.webp"
+                          src="/ascend/images/results-strip-1e1b74.webp"
                           alt="Assessment results performance chart"
                           width={994}
                           height={110}

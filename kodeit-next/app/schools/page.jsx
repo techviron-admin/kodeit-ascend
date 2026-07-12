@@ -125,7 +125,7 @@ export default function SchoolsPage() {
         <section className="kd-section aw-section" id="reporting">
           <img
             className="kd-deco"
-            src="/images/module-blurb-sm.svg"
+            src="/ascend/images/module-blurb-sm.svg"
             alt=""
             aria-hidden="true"
             style={{ left: "16%", top: 40, width: 49 }}
@@ -156,7 +156,7 @@ export default function SchoolsPage() {
         <section className="kd-section aw-section" id="english">
           <img
             className="kd-deco"
-            src="/images/module-pattern.svg"
+            src="/ascend/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -60, top: 120, width: 210 }}
@@ -171,7 +171,7 @@ export default function SchoolsPage() {
                 <article className="er-card" key={title}>
                   <span className="cf-icon">
                     <img
-                      src="/images/comp-framework.svg"
+                      src="/ascend/images/comp-framework.svg"
                       alt=""
                       width={60}
                       height={60}
@@ -191,7 +191,7 @@ export default function SchoolsPage() {
         <section className="kd-section aw-section" id="curriculum">
           <img
             className="kd-deco"
-            src="/images/module-pattern.svg"
+            src="/ascend/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ right: -60, bottom: 40, width: 210 }}
@@ -213,7 +213,7 @@ export default function SchoolsPage() {
                   </div>
                   <img
                     className="cm-arrow"
-                    src="/images/comp-arrow.svg"
+                    src="/ascend/images/comp-arrow.svg"
                     alt=""
                     aria-hidden="true"
                     width={40}

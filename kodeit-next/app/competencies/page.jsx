@@ -72,7 +72,7 @@ export default function CompetenciesPage() {
         <section className="kd-section" id="frameworks">
           <img
             className="kd-deco"
-            src="/images/module-blurb-sm.svg"
+            src="/ascend/images/module-blurb-sm.svg"
             alt=""
             aria-hidden="true"
             style={{ left: "18%", top: 10, width: 49 }}
@@ -87,7 +87,7 @@ export default function CompetenciesPage() {
                 <article className="cf-card" key={abbr}>
                   <span className="cf-icon">
                     <img
-                      src="/images/comp-framework.svg"
+                      src="/ascend/images/comp-framework.svg"
                       alt=""
                       width={60}
                       height={60}
@@ -112,14 +112,14 @@ export default function CompetenciesPage() {
         <section className="kd-section aw-section" id="manage">
           <img
             className="kd-deco"
-            src="/images/module-pattern.svg"
+            src="/ascend/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -60, top: 220, width: 210 }}
           />
           <img
             className="kd-deco"
-            src="/images/sparkle-1.svg"
+            src="/ascend/images/sparkle-1.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "6%", top: 0, width: 54 }}
@@ -134,7 +134,7 @@ export default function CompetenciesPage() {
                 <article className="cm-card" key={title}>
                   <span className="md-badge">
                     <img
-                      src={`/images/${icon}`}
+                      src={`/ascend/images/${icon}`}
                       alt=""
                       width={54}
                       height={54}
@@ -146,7 +146,7 @@ export default function CompetenciesPage() {
                   </div>
                   <img
                     className="cm-arrow"
-                    src="/images/comp-arrow.svg"
+                    src="/ascend/images/comp-arrow.svg"
                     alt=""
                     aria-hidden="true"
                     width={40}

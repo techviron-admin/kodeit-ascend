@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import Arrow from "@/components/Arrow";
 import SiteFooter from "@/components/SiteFooter";
@@ -80,13 +80,13 @@ export default function ProductPage() {
         <section className="pd-hero">
           <img
             className="kd-deco deco-bg"
-            src="/images/bg-product.svg"
+            src="/ascend/images/bg-product.svg"
             alt=""
             aria-hidden="true"
           />
           <img
             className="kd-deco deco-blurb"
-            src="/images/blurb-product.svg"
+            src="/ascend/images/blurb-product.svg"
             alt=""
             aria-hidden="true"
           />
@@ -105,7 +105,7 @@ export default function ProductPage() {
             </div>
             <div className="pd-hero-visual">
               <Image
-                src="/images/product-hero.webp"
+                src="/ascend/images/product-hero.webp"
                 alt="Kodeit Ascend dashboard preview"
                 width={1162}
                 height={716}
@@ -121,7 +121,7 @@ export default function ProductPage() {
         <section className="pd-tools" id="tools">
           <img
             className="kd-deco"
-            src="/images/sparkle-1.svg"
+            src="/ascend/images/sparkle-1.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "8%", top: 40, width: 58 }}
@@ -137,7 +137,7 @@ export default function ProductPage() {
                 <Link key={title} href={href} className="pd-tool">
                   <img
                     className="icon"
-                    src={`/images/${icon}`}
+                    src={`/ascend/images/${icon}`}
                     alt=""
                     width={54}
                     height={54}
@@ -169,7 +169,7 @@ export default function ProductPage() {
               </div>
               <div>
                 <Image
-                  src="/images/scale-campus.webp"
+                  src="/ascend/images/scale-campus.webp"
                   alt="Modern school campus"
                   width={874}
                   height={422}

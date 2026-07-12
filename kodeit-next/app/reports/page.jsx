@@ -145,14 +145,14 @@ export default function ReportsPage() {
         <section className="kd-section aw-section" id="categories">
           <img
             className="kd-deco"
-            src="/images/module-pattern.svg"
+            src="/ascend/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -60, top: 320, width: 210 }}
           />
           <img
             className="kd-deco"
-            src="/images/module-blurb-sm.svg"
+            src="/ascend/images/module-blurb-sm.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "10%", top: 20, width: 49 }}
@@ -165,7 +165,7 @@ export default function ReportsPage() {
             <div className="rp-grid">
               {categories.map(([icon, title, desc]) => (
                 <article className="rp-card" key={title}>
-                  <img src={`/images/${icon}`} alt="" width={44} height={44} />
+                  <img src={`/ascend/images/${icon}`} alt="" width={44} height={44} />
                   <div>
                     <h3>{title}</h3>
                     <p>{desc}</p>

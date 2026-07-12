@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -36,7 +36,7 @@ export default function SiteHeader() {
       <div className="container nav-wrap">
         <Link href="/" className="logo-brand" aria-label="Kodeit Ascend home">
           <Image
-            src="/images/logo-e64514.webp"
+            src="/ascend/images/logo-e64514.webp"
             alt="Kodeit"
             width={56}
             height={48}
