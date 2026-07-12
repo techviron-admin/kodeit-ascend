@@ -129,7 +129,7 @@ export default function AnalyticsPage() {
           primaryHref="#insights"
           primaryLabel="Explore Analytics"
           secondaryHref="/dashboard"
-          secondaryLabel="View Sample Dashboard"
+          secondaryLabel="View Dashboard"
           imageAlt="Kodeit Ascend analytics dashboard"
         />
 

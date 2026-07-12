@@ -103,7 +103,7 @@ export default function UsersPage() {
           primaryHref="#roles"
           primaryLabel="Explore Roles"
           secondaryHref="/reports"
-          secondaryLabel="View Sample Reports"
+          secondaryLabel="View Reports"
           imageAlt="Kodeit Ascend user management portal"
         />
 

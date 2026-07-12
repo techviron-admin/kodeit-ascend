@@ -137,7 +137,7 @@ export default function ReportsPage() {
           primaryHref="#categories"
           primaryLabel="Explore Reports"
           secondaryHref="/analytics"
-          secondaryLabel="View Sample Reports"
+          secondaryLabel="View Reports"
           imageAlt="Kodeit Ascend reports dashboard"
         />
 
