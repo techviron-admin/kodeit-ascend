@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Kodeit Ascend</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%234f46e5'/><path d='M9 23v-6h3.5v6H9zm5.25 0V12h3.5v11h-3.5zm5.25 0V8H23v15h-3.5z' fill='white'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="app-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo-brand" aria-label="Kodeit Ascend home"><img src="images/logo-e64514.png" alt="Kodeit" width="56" height="48"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item">
+          <a href="product.html" class="nav-link is-current">Product
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="menu-panel">
+            <a href="product.html">Overview</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="assessments.html">Assessments</a>
+            <a href="question-bank.html">Question Bank</a>
+            <a href="reports.html">Reports</a>
+            <a href="competencies.html">Competencies</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="schools.html">Schools</a>
+            <a href="users.html">Users</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="#" class="nav-link">Solutions</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Resources</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">About Us</a></div>
+      </nav>
+      <div class="nav-actions">
+        <a href="help.html#contact" class="btn btn-book">Book a Demo</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+      <main id="main" class="page">
+        <div class="page-head">
+          <div>
+            <h1>Profile</h1>
+            <p class="desc">Your account, preferences, and security. Sample data for display purposes.</p>
+          </div>
+        </div>
+
+        <section class="grid-2" style="grid-template-columns:1fr 2fr">
+          <!-- Identity card -->
+          <div class="panel">
+            <div class="panel-body profile-card">
+              <span class="avatar lg">AO</span>
+              <h2>Dr. Amara Okafor</h2>
+              <p class="role">District Administrator &middot; Westbrook Unified</p>
+              <dl class="profile-meta">
+                <div><dt>Email</dt><dd>amara.okafor@westbrook.edu</dd></div>
+                <div><dt>Phone</dt><dd>(555) 014-2287</dd></div>
+                <div><dt>Office</dt><dd>District Office</dd></div>
+                <div><dt>Member since</dt><dd>August 2023</dd></div>
+                <div><dt>Timezone</dt><dd>GMT+4 &mdash; Gulf Standard</dd></div>
+              </dl>
+              <button class="btn btn-outline btn-sm" data-fake data-done="Photo updated">Change photo</button>
+            </div>
+          </div>
+
+          <div style="display:grid;gap:24px;align-content:start">
+            <!-- Personal info -->
+            <div class="panel">
+              <div class="panel-head">
+                <div><h2>Personal information</h2><p class="hint">Shown to colleagues across the district</p></div>
+              </div>
+              <div class="panel-body">
+                <div class="form-grid">
+                  <label class="field">First name<input class="control" type="text" value="Amara"></label>
+                  <label class="field">Last name<input class="control" type="text" value="Okafor"></label>
+                  <label class="field">Title<input class="control" type="text" value="District Administrator"></label>
+                  <label class="field wide">Email<input class="control" type="email" value="amara.okafor@westbrook.edu"></label>
+                  <label class="field">Language
+                    <select class="control"><option>English (US)</option><option>Arabic</option><option>French</option><option>Spanish</option></select>
+                  </label>
+                </div>
+                <div class="form-foot">
+                  <p class="form-note">Changes sync to every school workspace you belong to.</p>
+                  <button class="btn btn-primary btn-sm" data-fake data-done="Changes saved">Save changes</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Notifications -->
+            <div class="panel">
+              <div class="panel-head">
+                <div><h2>Notification preferences</h2><p class="hint">Delivered by email and in-app</p></div>
+              </div>
+              <div class="panel-body">
+                <div class="pref-row">
+                  <div><strong>Weekly performance digest</strong><p>Monday morning summary of mastery movement across your schools.</p></div>
+                  <span class="switch on" role="switch" aria-checked="true" tabindex="0" aria-label="Weekly performance digest"></span>
+                </div>
+                <div class="pref-row">
+                  <div><strong>Grading queue reminders</strong><p>Nudges when submissions wait longer than 48 hours.</p></div>
+                  <span class="switch on" role="switch" aria-checked="true" tabindex="0" aria-label="Grading queue reminders"></span>
+                </div>
+                <div class="pref-row">
+                  <div><strong>AI generation summaries</strong><p>Daily recap of items generated and their review status.</p></div>
+                  <span class="switch" role="switch" aria-checked="false" tabindex="0" aria-label="AI generation summaries"></span>
+                </div>
+                <div class="pref-row">
+                  <div><strong>Product updates</strong><p>New features, framework additions, and release notes.</p></div>
+                  <span class="switch on" role="switch" aria-checked="true" tabindex="0" aria-label="Product updates"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security -->
+            <div class="panel">
+              <div class="panel-head">
+                <div><h2>Security</h2><p class="hint">Managed by your district's SSO policy</p></div>
+              </div>
+              <div class="panel-body">
+                <div class="pref-row">
+                  <div><strong>Password</strong><p>Last changed February 2026.</p></div>
+                  <button class="btn btn-outline btn-sm" data-fake data-done="Reset link sent">Change password</button>
+                </div>
+                <div class="pref-row">
+                  <div><strong>Two-factor authentication</strong><p>Authenticator app &middot; enabled.</p></div>
+                  <span class="switch on" role="switch" aria-checked="true" tabindex="0" aria-label="Two-factor authentication"></span>
+                </div>
+                <div class="pref-row">
+                  <div><strong>Active sessions</strong><p>3 devices signed in.</p></div>
+                  <button class="btn btn-outline btn-sm" data-fake data-done="Signed out everywhere">Sign out of all devices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">&copy; 2025 Kodeit Ascend &middot; All data shown is sample data for display purposes only.</footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

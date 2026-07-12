@@ -1,0 +1,22 @@
+<svg width="226" height="431" viewBox="0 0 226 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_395_1259)">
+<path d="M133.432 397.979C136.786 392.224 151.653 382.265 154.159 373.82C156.665 365.376 163.622 367.099 168.167 372.757C174.485 380.623 181.675 392.211 175.093 405.008C170.977 413.011 160.728 416.984 145.771 415.755C130.814 414.525 130.386 403.203 133.432 397.979Z" fill="#FFB9DE"/>
+</g>
+<g filter="url(#filter1_f_395_1259)">
+<path d="M204.04 44.6094C198.513 46.5306 182.902 44.6764 176.403 48.8771C169.905 53.0778 166.249 47.9515 166.451 41.579C166.733 32.7207 168.561 20.8803 180.266 16.1058C187.586 13.1199 196.694 16.3283 205.969 25.6981C215.245 35.0678 209.058 42.8652 204.04 44.6094Z" fill="#FFBF4D"/>
+</g>
+<path d="M127.354 100.608C123.854 99.7262 119.401 102.352 114.92 100.459C110.44 98.5665 102.373 95.511 102.087 105.423C101.603 122.173 113.155 129.635 121.666 128.654C125.444 128.219 134.654 123.052 135.172 113.767C135.69 104.481 129.422 101.129 127.354 100.608Z" fill="#16AB11"/>
+<path d="M96.8918 192.109C94.953 180.644 81.4318 170.916 81.2021 155.247C80.9723 139.577 79.5199 111.823 49.9173 123.837C-0.109846 144.139 -7.13341 187.888 6.79946 211.716C12.9842 222.293 40.1682 242.752 68.2255 232.235C96.2827 221.718 98.0376 198.884 96.8918 192.109Z" stroke="#12C6FF"/>
+<defs>
+<filter id="filter0_f_395_1259" x="116.901" y="352.971" width="75.8286" height="78.0286" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_395_1259"/>
+</filter>
+<filter id="filter1_f_395_1259" x="151.418" y="0" width="74.3661" height="65.4311" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_395_1259"/>
+</filter>
+</defs>
+</svg>

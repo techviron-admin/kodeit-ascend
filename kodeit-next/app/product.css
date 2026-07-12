@@ -1,0 +1,275 @@
+/* ============================================================
+   Kodeit Ascend — Product Overview page styles
+   (Figma "Product_Overview_Pramod" frame)
+   Loaded only on product.html, after styles.css + home.css
+   ============================================================ */
+
+/* ---------- Hero ---------- */
+.pd-hero {
+  position: relative;
+  background: #fff2e2;
+  overflow: hidden;
+  padding: 64px 0 72px;
+}
+.pd-hero .deco-bg {
+  left: 50%;
+  top: -40px;
+  transform: translateX(-72%);
+  width: min(840px, 60vw);
+}
+.pd-hero .deco-blurb {
+  left: -120px;
+  top: 40px;
+  width: 380px;
+  opacity: 0.9;
+}
+.pd-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .pd-hero-inner {
+    grid-template-columns: 1fr;
+  }
+}
+.pd-hero .kd-eyebrow {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.page-home .pd-hero h1 {
+  font-size: clamp(34px, 4vw, 46px);
+  line-height: 1.3;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1e3a8a 0%, #080f24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+.pd-hero .sub {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--kd-body);
+  margin-bottom: 44px;
+}
+.pd-hero-visual {
+  position: relative;
+  min-height: 320px;
+}
+.pd-hero-visual::before,
+.pd-hero-visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+.pd-hero-visual::before {
+  width: 43%;
+  aspect-ratio: 1;
+  background: #ff732b;
+  top: -11%;
+  left: -13%;
+}
+.pd-hero-visual::after {
+  width: 28%;
+  aspect-ratio: 1;
+  background: #ffbf4d;
+  bottom: -9%;
+  left: -19%;
+}
+.pd-hero-visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px -24px rgba(2, 27, 46, 0.35);
+}
+@media (max-width: 980px) {
+  .pd-hero-visual {
+    margin-left: 40px;
+  }
+}
+
+/* ---------- Tools grid ---------- */
+.pd-tools {
+  position: relative;
+  padding: 90px 0;
+}
+.pd-tools .kd-eyebrow {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.page-home .pd-tools h2 {
+  max-width: 746px;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+.pd-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  .pd-tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 860px) {
+  .pd-tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .pd-tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pd-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 24px;
+  padding: 20px 18px;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+.pd-tool:hover {
+  transform: translateY(-4px);
+  border-color: #b9d2f5;
+  box-shadow: 0 14px 30px -16px rgba(27, 92, 196, 0.35);
+}
+.pd-tool .icon {
+  width: 54px;
+  height: 54px;
+}
+.page-home .pd-tool h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #021b2e;
+  margin-bottom: 4px;
+}
+.pd-tool p {
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--kd-body);
+  margin: 0;
+}
+.pd-tool .arrow {
+  width: 24px;
+  height: 24px;
+  color: #021b2e;
+  align-self: flex-end;
+  margin-top: auto;
+  transition: transform 0.18s ease;
+}
+.pd-tool:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* ---------- Scale section ---------- */
+.pd-scale {
+  padding: 20px 0 90px;
+}
+.pd-scale-box {
+  position: relative;
+  overflow: hidden;
+  background: #f8edfb url("/images/pattern-scale.svg") no-repeat center /
+    cover;
+  border-radius: 24px;
+  padding: clamp(32px, 4vw, 58px) clamp(24px, 3vw, 42px);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(36px, 5vw, 91px);
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .pd-scale-box {
+    grid-template-columns: 1fr;
+  }
+}
+.page-home .pd-scale-box h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+  font-weight: 700;
+  color: #021b2e;
+  margin-bottom: 22px;
+}
+.pd-scale-box .sub {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--kd-body);
+  margin-bottom: 44px;
+}
+.pd-scale-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+/* ---------- Trusted by ---------- */
+.pd-trusted {
+  position: relative;
+  padding: 40px 0 90px;
+  text-align: center;
+}
+.pd-trusted .lbl {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #021b2e;
+  margin-bottom: 34px;
+}
+.pd-trusted .logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 3vw, 40px);
+  flex-wrap: wrap;
+}
+.pd-trusted .logos img {
+  height: 20px;
+  width: auto;
+}
+
+/* ---------- Footer tint (product) ---------- */
+.kd-footer.kd-footer--tint {
+  background: #e6f0ff;
+}
+.kd-footer--tint .kd-foot-col a,
+.kd-footer--tint .kd-foot-brand p {
+  color: var(--kd-body);
+}
+.kd-footer--tint .kd-foot-col a:hover {
+  color: var(--kd-blue);
+}
+.kd-footer--tint .kd-foot-col h4,
+.kd-footer--tint .kd-news h4,
+.kd-footer--tint .kd-news .note,
+.kd-footer--tint .kd-footer-legal a {
+  color: #021b2e;
+}
+.kd-footer--tint .kd-news-form input {
+  background: #fff;
+  border-color: #fff;
+}
+.kd-footer--tint .kd-footer-bottom {
+  border-top-color: rgba(2, 27, 46, 0.12);
+}

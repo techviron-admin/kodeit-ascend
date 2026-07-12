@@ -1,0 +1,15 @@
+# Dependencies / build output
+node_modules/
+.next/
+out/
+
+# Local design scratch (Figma downloads, original PNGs)
+figma-tmp/
+
+# Env / logs
+.env*
+*.log
+
+# OS / editor
+Thumbs.db
+.DS_Store

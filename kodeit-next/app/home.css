@@ -1,0 +1,657 @@
+/* ============================================================
+   Kodeit Ascend — Home page styles (Figma "Homepage" frame)
+   Loaded only on index.html, after styles.css
+   ============================================================ */
+
+:root {
+  --kd-ink: #050a41;
+  --kd-body: #6d6d6d;
+  --kd-blue: #1b5cc4;
+  --kd-orange: #ff752d;
+  --kd-grad: linear-gradient(90deg, #1e3a8a 21%, #12c3fd 97%);
+}
+
+.page-home {
+  color: var(--kd-body);
+}
+.page-home h1,
+.page-home h2,
+.page-home h3 {
+  color: var(--kd-ink);
+  letter-spacing: 0;
+}
+
+/* ---------- Shared home atoms ---------- */
+.btn-grad {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--kd-grad);
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    opacity 0.18s ease;
+  white-space: nowrap;
+}
+.btn-grad:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(18, 89, 195, 0.28);
+}
+.link-orange {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--kd-orange);
+  font-weight: 500;
+  font-size: 17px;
+}
+.link-orange svg {
+  width: 20px;
+  height: 20px;
+}
+.link-orange:hover {
+  text-decoration: underline;
+}
+
+.kd-eyebrow {
+  display: block;
+  color: var(--kd-blue);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.kd-head {
+  max-width: 841px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+.kd-head h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.kd-head .sub {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--kd-body);
+  margin: 0 auto;
+}
+.kd-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+
+.kd-section {
+  position: relative;
+  padding: 90px 0;
+}
+
+/* decorative floaters */
+.kd-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+@media (max-width: 1100px) {
+  .kd-deco {
+    display: none;
+  }
+}
+
+/* ---------- Hero ---------- */
+.kd-hero {
+  position: relative;
+  padding: 78px 0 90px;
+  overflow: hidden;
+}
+.kd-hero .deco-bg {
+  top: -60px;
+  left: 50%;
+  transform: translateX(-58%);
+  width: min(840px, 70vw);
+  opacity: 0.9;
+}
+.kd-hero .deco-pattern-r {
+  right: -110px;
+  top: 250px;
+  width: 300px;
+}
+.kd-hero .deco-sparkle-1 {
+  top: 34px;
+  right: 27%;
+  width: 60px;
+}
+.kd-hero .deco-sparkle-2 {
+  top: 280px;
+  right: 15%;
+  width: 39px;
+}
+.kd-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+  text-align: center;
+}
+.kd-hero h1 {
+  max-width: 820px;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.33;
+  font-weight: 700;
+  color: #000;
+}
+.kd-hero .lead {
+  max-width: 787px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  margin-top: -20px;
+}
+.kd-hero-img {
+  width: 100%;
+  margin-top: 28px;
+}
+.kd-hero-img img {
+  width: 100%;
+  height: auto;
+  max-height: 856px;
+  object-fit: cover;
+  border-radius: 16px 206px 16px 206px;
+}
+@media (max-width: 720px) {
+  .kd-hero-img img {
+    border-radius: 12px 80px 12px 80px;
+  }
+}
+
+/* ---------- Platform ---------- */
+.kd-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 62px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 980px) {
+  .kd-cards {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+}
+.kd-card {
+  text-align: center;
+}
+.kd-card img {
+  width: 100%;
+  height: 248px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.kd-card h3 {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.34;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.kd-card p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 424px;
+  margin: 0 auto;
+}
+.kd-section .kd-actions.mt {
+  margin-top: 64px;
+}
+
+/* ---------- Split sections (Question bank / Reporting) ---------- */
+.kd-split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 980px) {
+  .kd-split {
+    grid-template-columns: 1fr;
+  }
+}
+.kd-split-visual img {
+  width: 100%;
+  height: auto;
+}
+.kd-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.kd-feature-list hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 0;
+}
+.kd-feature-list h3 {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.34;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.kd-feature-list p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Reporting */
+.kd-report-copy .kd-eyebrow {
+  margin-bottom: 24px;
+}
+.kd-report-copy h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.kd-report-copy .sub {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.kd-logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+.kd-logos img {
+  height: 30px;
+  width: auto;
+}
+.kd-report-copy .kd-actions {
+  justify-content: flex-start;
+}
+
+/* ---------- Benefits ---------- */
+.kd-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+  margin-top: 90px;
+}
+@media (max-width: 980px) {
+  .kd-benefits {
+    grid-template-columns: 1fr;
+    margin-top: 70px;
+  }
+}
+.kd-benefit {
+  border-radius: 24px;
+  background: var(--card-bg);
+  padding: 0 26px 42px;
+}
+.kd-benefit img {
+  width: calc(100% + 32px);
+  max-width: none;
+  margin: -46px -16px 26px;
+  height: auto;
+}
+.kd-benefit .tag {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--card-muted);
+  margin-bottom: 12px;
+}
+.page-home .kd-benefit h3 {
+  color: var(--card-ink);
+  font-size: clamp(22px, 2.2vw, 28px);
+  line-height: 1.34;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.kd-benefit p {
+  color: var(--card-muted);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+.kd-benefit .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--card-ink);
+}
+.kd-benefit .card-link svg {
+  width: 20px;
+  height: 20px;
+}
+.kd-benefit.teachers {
+  --card-bg: #ffbcf9;
+  --card-ink: #5c0e55;
+  --card-muted: rgba(92, 14, 85, 0.75);
+}
+.kd-benefit.students {
+  --card-bg: #c1bcfe;
+  --card-ink: #373274;
+  --card-muted: rgba(55, 50, 116, 0.75);
+}
+.kd-benefit.leaders {
+  --card-bg: #e1f8fb;
+  --card-ink: #4c6f79;
+  --card-muted: rgba(76, 111, 121, 0.75);
+}
+
+/* ---------- Process ---------- */
+.kd-process {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 62px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 980px) {
+  .kd-process {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+.kd-step {
+  position: relative;
+  min-height: 620px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center top;
+  isolation: isolate;
+}
+@media (max-width: 980px) {
+  .kd-step {
+    min-height: 520px;
+  }
+}
+.kd-step::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--step-grad);
+}
+.kd-step-body {
+  position: relative;
+  z-index: 1;
+  padding: 0 22px 40px;
+  color: #fff;
+}
+.kd-step-body .step-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+}
+.page-home .kd-step-body h3 {
+  color: #fff;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.34;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.kd-step-body p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+.kd-step-body .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+.kd-step-body .card-link svg {
+  width: 20px;
+  height: 20px;
+}
+.kd-step .bg-img {
+  object-fit: cover;
+  object-position: center top;
+  z-index: -1;
+}
+.kd-step.s1 {
+  --step-grad: linear-gradient(
+    180deg,
+    rgba(255, 117, 45, 0) 47%,
+    rgba(255, 117, 45, 0.87) 66%,
+    rgba(255, 117, 45, 1) 100%
+  );
+}
+.kd-step.s2 {
+  --step-grad: linear-gradient(
+    180deg,
+    rgba(107, 170, 199, 0) 47%,
+    rgba(107, 170, 199, 0.83) 68%,
+    rgba(107, 170, 199, 1) 100%
+  );
+}
+.kd-step.s3 {
+  --step-grad: linear-gradient(
+    180deg,
+    rgba(112, 139, 5, 0) 47%,
+    rgba(112, 139, 5, 0.8) 65%,
+    rgba(112, 139, 5, 1) 100%
+  );
+}
+
+/* ---------- Pilot CTA ---------- */
+.kd-cta {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  isolation: isolate;
+}
+.kd-cta .bg-img {
+  object-fit: cover;
+  z-index: -1;
+}
+.kd-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+.kd-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 98px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.page-home .kd-cta-inner h2 {
+  color: #fff;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+  font-weight: 700;
+}
+.kd-cta-inner p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+}
+.kd-cta-inner .btn-grad {
+  margin-top: 22px;
+}
+
+/* ---------- Footer ---------- */
+.kd-footer {
+  padding: 90px 0 40px;
+  background: #fff;
+  color: #000;
+}
+.kd-footer-top {
+  display: grid;
+  grid-template-columns: 250px 1fr 280px;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 56px;
+}
+@media (max-width: 1100px) {
+  .kd-footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .kd-footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.kd-foot-brand img.logo {
+  width: 82px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+.kd-foot-brand p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--kd-body);
+  margin-bottom: 18px;
+}
+.kd-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.kd-social img {
+  width: 27px;
+  height: 27px;
+}
+.kd-foot-cols {
+  display: flex;
+  gap: clamp(24px, 3.5vw, 60px);
+  flex-wrap: wrap;
+}
+.kd-foot-col h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 16px;
+}
+.kd-foot-col a {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 12px;
+}
+.kd-foot-col a:hover {
+  color: var(--kd-blue);
+}
+.kd-news h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+.kd-news .note {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 16px;
+  max-width: 300px;
+}
+.kd-news-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.kd-news-form input {
+  background: #fbfbfb;
+  border: 1px solid #efefef;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 16px;
+  width: min(280px, 100%);
+}
+.kd-news-form input::placeholder {
+  color: rgba(43, 42, 41, 0.5);
+}
+.kd-news-form .btn-grad {
+  font-size: 16px;
+  padding: 13px 30px;
+}
+.kd-footer .form-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #16ab11;
+  font-weight: 600;
+}
+.kd-footer .form-success svg {
+  width: 20px;
+  height: 20px;
+}
+.kd-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  padding-top: 28px;
+}
+.kd-footer-bottom .copy {
+  font-size: 14px;
+  line-height: 26px;
+  color: #605d5d;
+}
+.kd-footer-legal {
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 5vw, 76px);
+}
+.kd-footer-legal a {
+  font-size: 14px;
+  color: #000;
+}
+.kd-footer-legal a:hover {
+  color: var(--kd-blue);
+}
