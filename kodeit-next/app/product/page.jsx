@@ -179,38 +179,6 @@ export default function ProductPage() {
             </div>
           </div>
         </section>
-
-        {/* ============ Trusted by ============ */}
-        <section className="pd-trusted">
-          <img
-            className="kd-deco"
-            src="/images/blurb-4.svg"
-            alt=""
-            aria-hidden="true"
-            style={{ left: "2%", top: -140, width: 200 }}
-          />
-          <img
-            className="kd-deco"
-            src="/images/blurb-2.svg"
-            alt=""
-            aria-hidden="true"
-            style={{ right: "3%", top: -220, width: 150 }}
-          />
-          <div className="container">
-            <p className="lbl">Trusted by educational institution worldwide</p>
-            <div className="logos" aria-hidden="true">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <Image
-                  key={i}
-                  src="/images/partner-logo.png"
-                  alt=""
-                  width={119}
-                  height={20}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
 
       <SiteFooter tint />
