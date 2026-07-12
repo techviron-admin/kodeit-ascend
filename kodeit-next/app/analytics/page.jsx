@@ -137,7 +137,7 @@ export default function AnalyticsPage() {
         <section className="kd-section aw-section" id="insights">
           <img
             className="kd-deco"
-            src="/ascend/images/module-blurb-sm.svg"
+            src="/images/module-blurb-sm.svg"
             alt=""
             aria-hidden="true"
             style={{ left: "14%", top: 30, width: 49 }}
@@ -178,7 +178,7 @@ export default function AnalyticsPage() {
               </div>
               <div className="shot">
                 <Image
-                  src="/ascend/images/module-hero.webp"
+                  src="/images/module-hero.webp"
                   alt="Kodeit Ascend admin dashboard overview"
                   width={1162}
                   height={716}

@@ -11,7 +11,7 @@ export default function SiteFooter({ tint = false }) {
             <Link href="/" aria-label="Kodeit Ascend home">
               <Image
                 className="logo"
-                src="/ascend/images/logo-e64514.webp"
+                src="/images/logo-e64514.webp"
                 alt="Kodeit logo"
                 width={82}
                 height={70}
@@ -23,16 +23,16 @@ export default function SiteFooter({ tint = false }) {
             </p>
             <div className="kd-social">
               <a href="#" aria-label="Social media">
-                <img src="/ascend/images/social-1.svg" alt="" width={27} height={27} />
+                <img src="/images/social-1.svg" alt="" width={27} height={27} />
               </a>
               <a href="#" aria-label="Social media">
-                <img src="/ascend/images/social-2.svg" alt="" width={27} height={27} />
+                <img src="/images/social-2.svg" alt="" width={27} height={27} />
               </a>
               <a href="#" aria-label="Social media">
-                <img src="/ascend/images/social-3.svg" alt="" width={27} height={27} />
+                <img src="/images/social-3.svg" alt="" width={27} height={27} />
               </a>
               <a href="#" aria-label="Social media">
-                <img src="/ascend/images/social-4.svg" alt="" width={27} height={27} />
+                <img src="/images/social-4.svg" alt="" width={27} height={27} />
               </a>
             </div>
           </div>

@@ -36,7 +36,7 @@ export default function SiteHeader() {
       <div className="container nav-wrap">
         <Link href="/" className="logo-brand" aria-label="Kodeit Ascend home">
           <Image
-            src="/ascend/images/logo-e64514.webp"
+            src="/images/logo-e64514.webp"
             alt="Kodeit"
             width={56}
             height={48}

@@ -19,19 +19,19 @@ export default function ModuleHero({
     <section className={`md-hero md-hero--${variant}`}>
       <img
         className="kd-deco deco-bg"
-        src="/ascend/images/module-bg-hero.svg"
+        src="/images/module-bg-hero.svg"
         alt=""
         aria-hidden="true"
       />
       <img
         className="kd-deco deco-blurb"
-        src="/ascend/images/module-blurb-hero.svg"
+        src="/images/module-blurb-hero.svg"
         alt=""
         aria-hidden="true"
       />
       <img
         className="kd-deco deco-tr"
-        src="/ascend/images/module-blurb-tr.svg"
+        src="/images/module-blurb-tr.svg"
         alt=""
         aria-hidden="true"
       />
@@ -54,7 +54,7 @@ export default function ModuleHero({
           className={`md-hero-visual${deco ? " has-deco" : ""}${circles ? " has-circles" : ""}`}
         >
           <Image
-            src="/ascend/images/module-hero.webp"
+            src="/images/module-hero.webp"
             alt={imageAlt}
             width={1162}
             height={716}

@@ -12,25 +12,25 @@ export default function HomePage() {
         <section className="kd-hero">
           <img
             className="kd-deco deco-bg"
-            src="/ascend/images/bg-hero.svg"
+            src="/images/bg-hero.svg"
             alt=""
             aria-hidden="true"
           />
           <img
             className="kd-deco deco-pattern-r"
-            src="/ascend/images/pattern.svg"
+            src="/images/pattern.svg"
             alt=""
             aria-hidden="true"
           />
           <img
             className="kd-deco deco-sparkle-1"
-            src="/ascend/images/sparkle-1.svg"
+            src="/images/sparkle-1.svg"
             alt=""
             aria-hidden="true"
           />
           <img
             className="kd-deco deco-sparkle-2"
-            src="/ascend/images/sparkle-2.svg"
+            src="/images/sparkle-2.svg"
             alt=""
             aria-hidden="true"
           />
@@ -48,7 +48,7 @@ export default function HomePage() {
             </a>
             <div className="kd-hero-img">
               <Image
-                src="/ascend/images/hero.webp"
+                src="/images/hero.webp"
                 alt="Student learning on a tablet with hands-on activities"
                 width={1612}
                 height={856}
@@ -63,14 +63,14 @@ export default function HomePage() {
         <section className="kd-section" id="platform">
           <img
             className="kd-deco"
-            src="/ascend/images/blurb-1.svg"
+            src="/images/blurb-1.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -50, top: 40, width: 230 }}
           />
           <img
             className="kd-deco"
-            src="/ascend/images/blurb-2.svg"
+            src="/images/blurb-2.svg"
             alt=""
             aria-hidden="true"
             style={{ right: -30, top: -140, width: 170 }}
@@ -88,7 +88,7 @@ export default function HomePage() {
             <div className="kd-cards">
               <article className="kd-card">
                 <Image
-                  src="/ascend/images/platform-1.webp"
+                  src="/images/platform-1.webp"
                   alt="Teacher creating AI-powered assessments"
                   width={496}
                   height={248}
@@ -101,7 +101,7 @@ export default function HomePage() {
               </article>
               <article className="kd-card">
                 <Image
-                  src="/ascend/images/platform-2.webp"
+                  src="/images/platform-2.webp"
                   alt="Competency mapping across frameworks"
                   width={496}
                   height={248}
@@ -112,7 +112,7 @@ export default function HomePage() {
               </article>
               <article className="kd-card">
                 <Image
-                  src="/ascend/images/platform-3.webp"
+                  src="/images/platform-3.webp"
                   alt="Analytics revealing growth trends"
                   width={496}
                   height={248}
@@ -141,7 +141,7 @@ export default function HomePage() {
         <section className="kd-section" id="question-bank">
           <img
             className="kd-deco"
-            src="/ascend/images/blurb-3.svg"
+            src="/images/blurb-3.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -70, top: 20, width: 190 }}
@@ -197,7 +197,7 @@ export default function HomePage() {
               </div>
               <div className="kd-split-visual">
                 <Image
-                  src="/ascend/images/qb-visual.webp"
+                  src="/images/qb-visual.webp"
                   alt="Students collaborating, shown in a colorful collage"
                   width={798}
                   height={798}
@@ -221,19 +221,19 @@ export default function HomePage() {
               </p>
               <div className="kd-logos">
                 <Image
-                  src="/ascend/images/partner-logo.png"
+                  src="/images/partner-logo.png"
                   alt="Partner logo"
                   width={179}
                   height={30}
                 />
                 <Image
-                  src="/ascend/images/partner-logo.png"
+                  src="/images/partner-logo.png"
                   alt="Partner logo"
                   width={179}
                   height={30}
                 />
                 <Image
-                  src="/ascend/images/partner-logo.png"
+                  src="/images/partner-logo.png"
                   alt="Partner logo"
                   width={179}
                   height={30}
@@ -251,7 +251,7 @@ export default function HomePage() {
             </div>
             <div className="kd-split-visual">
               <Image
-                src="/ascend/images/reporting-visual.webp"
+                src="/images/reporting-visual.webp"
                 alt="Reporting dashboards collage"
                 width={798}
                 height={798}
@@ -265,7 +265,7 @@ export default function HomePage() {
         <section className="kd-section" id="benefits">
           <img
             className="kd-deco"
-            src="/ascend/images/blurb-5.svg"
+            src="/images/blurb-5.svg"
             alt=""
             aria-hidden="true"
             style={{ left: "18%", top: -30, width: 120 }}
@@ -281,7 +281,7 @@ export default function HomePage() {
             <div className="kd-benefits">
               <article className="kd-benefit teachers">
                 <Image
-                  src="/ascend/images/benefit-teachers.webp"
+                  src="/images/benefit-teachers.webp"
                   alt="Teacher guiding students in class"
                   width={700}
                   height={350}
@@ -297,7 +297,7 @@ export default function HomePage() {
               </article>
               <article className="kd-benefit students">
                 <Image
-                  src="/ascend/images/benefit-students.webp"
+                  src="/images/benefit-students.webp"
                   alt="Students learning at their own pace"
                   width={700}
                   height={350}
@@ -313,7 +313,7 @@ export default function HomePage() {
               </article>
               <article className="kd-benefit leaders">
                 <Image
-                  src="/ascend/images/benefit-leaders.webp"
+                  src="/images/benefit-leaders.webp"
                   alt="School leaders reviewing curriculum alignment"
                   width={700}
                   height={350}
@@ -337,7 +337,7 @@ export default function HomePage() {
         <section className="kd-section" id="process">
           <img
             className="kd-deco"
-            src="/ascend/images/blurb-4.svg"
+            src="/images/blurb-4.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "6%", top: -60, width: 200 }}
@@ -354,7 +354,7 @@ export default function HomePage() {
               <article className="kd-step s1">
                 <Image
                   className="bg-img"
-                  src="/ascend/images/process-1.webp"
+                  src="/images/process-1.webp"
                   alt=""
                   fill
                   sizes="(max-width: 980px) 100vw, 380px"
@@ -376,7 +376,7 @@ export default function HomePage() {
               <article className="kd-step s2">
                 <Image
                   className="bg-img"
-                  src="/ascend/images/process-2.webp"
+                  src="/images/process-2.webp"
                   alt=""
                   fill
                   sizes="(max-width: 980px) 100vw, 380px"
@@ -397,7 +397,7 @@ export default function HomePage() {
               <article className="kd-step s3">
                 <Image
                   className="bg-img"
-                  src="/ascend/images/process-3-1d6405.webp"
+                  src="/images/process-3-1d6405.webp"
                   alt=""
                   fill
                   sizes="(max-width: 980px) 100vw, 380px"
@@ -425,7 +425,7 @@ export default function HomePage() {
             <div className="kd-cta">
               <Image
                 className="bg-img"
-                src="/ascend/images/cta-bg-7d0dc7.webp"
+                src="/images/cta-bg-7d0dc7.webp"
                 alt=""
                 fill
                 sizes="(max-width: 1200px) 100vw, 1160px"

@@ -65,7 +65,7 @@ export default function QuestionBankPage() {
         <section className="qs-wrap">
           <img
             className="kd-deco"
-            src="/ascend/images/module-blurb-sm.svg"
+            src="/images/module-blurb-sm.svg"
             alt=""
             aria-hidden="true"
             style={{ left: "22%", top: 20, width: 49 }}
@@ -76,7 +76,7 @@ export default function QuestionBankPage() {
                 <div className="qs-item" key={label}>
                   <span className="qs-icon">
                     <img
-                      src={`/ascend/images/${icon}`}
+                      src={`/images/${icon}`}
                       alt=""
                       width={56}
                       height={56}
@@ -96,14 +96,14 @@ export default function QuestionBankPage() {
         <section className="kd-section aw-section" id="explore">
           <img
             className="kd-deco"
-            src="/ascend/images/module-pattern.svg"
+            src="/images/module-pattern.svg"
             alt=""
             aria-hidden="true"
             style={{ left: -60, top: 320, width: 210 }}
           />
           <img
             className="kd-deco"
-            src="/ascend/images/sparkle-1.svg"
+            src="/images/sparkle-1.svg"
             alt=""
             aria-hidden="true"
             style={{ right: "6%", top: 30, width: 54 }}
@@ -118,7 +118,7 @@ export default function QuestionBankPage() {
                 <article className="qb-card" key={title}>
                   <span className="md-badge">
                     <img
-                      src={`/ascend/images/${icon}`}
+                      src={`/images/${icon}`}
                       alt=""
                       width={58}
                       height={58}
@@ -130,7 +130,7 @@ export default function QuestionBankPage() {
                   </div>
                   <img
                     className="qb-arrow"
-                    src="/ascend/images/qb-arrow.svg"
+                    src="/images/qb-arrow.svg"
                     alt=""
                     aria-hidden="true"
                     width={48}
