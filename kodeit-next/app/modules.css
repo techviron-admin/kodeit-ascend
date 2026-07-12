@@ -1133,3 +1133,122 @@
   cursor: default;
   transform: none;
 }
+
+/* Custom country-code dropdown + tidy scrollbars */
+.bd-modal {
+  scrollbar-width: thin;
+  scrollbar-color: #d8dfe8 transparent;
+}
+.bd-modal::-webkit-scrollbar {
+  width: 6px;
+}
+.bd-modal::-webkit-scrollbar-thumb {
+  background: #d8dfe8;
+  border-radius: 999px;
+}
+.bd-modal::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 18px 0;
+}
+.bd-cc {
+  position: relative;
+  flex: 0 0 118px;
+  display: block;
+}
+.bd-cc-btn {
+  width: 100%;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  padding: 11px 12px 11px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #021b2e;
+  background: #fff;
+  transition: border-color 0.15s ease;
+}
+.bd-cc.is-open .bd-cc-btn,
+.bd-cc-btn:hover {
+  border-color: #1b5cc4;
+}
+.bd-cc-btn .chev {
+  width: 15px;
+  height: 15px;
+  color: #6d6d6d;
+  transition: transform 0.18s ease;
+  flex-shrink: 0;
+}
+.bd-cc.is-open .bd-cc-btn .chev {
+  transform: rotate(180deg);
+}
+.bd-cc-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 20;
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 14px;
+  box-shadow: 0 18px 50px -12px rgba(2, 27, 46, 0.28);
+  overflow: hidden;
+}
+.bd-modal .bd-cc-search {
+  margin: 10px 10px 8px;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bd-cc-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 6px 8px;
+  max-height: 216px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d8dfe8 transparent;
+}
+.bd-cc-panel ul::-webkit-scrollbar {
+  width: 6px;
+}
+.bd-cc-panel ul::-webkit-scrollbar-thumb {
+  background: #d8dfe8;
+  border-radius: 999px;
+}
+.bd-cc-panel li button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  font-size: 14px;
+  color: #34404c;
+  text-align: left;
+}
+.bd-cc-panel li button:hover {
+  background: #f2f6fc;
+}
+.bd-cc-panel li button.is-on {
+  background: #e8f0fe;
+  color: #021b2e;
+  font-weight: 600;
+}
+.bd-cc-panel li button em {
+  font-style: normal;
+  color: #6d6d6d;
+  flex-shrink: 0;
+}
+.bd-phone > input[type="tel"] {
+  flex: 1;
+  min-width: 0;
+}

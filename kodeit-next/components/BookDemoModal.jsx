@@ -1,73 +1,73 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const codes = [
-  ["SA", "+966"],
-  ["AE", "+971"],
-  ["US", "+1"],
-  ["GB", "+44"],
-  ["IN", "+91"],
-  ["QA", "+974"],
-  ["KW", "+965"],
-  ["BH", "+973"],
-  ["OM", "+968"],
-  ["JO", "+962"],
-  ["EG", "+20"],
-  ["LB", "+961"],
-  ["IQ", "+964"],
-  ["PK", "+92"],
-  ["BD", "+880"],
-  ["LK", "+94"],
-  ["NP", "+977"],
-  ["MY", "+60"],
-  ["SG", "+65"],
-  ["ID", "+62"],
-  ["PH", "+63"],
-  ["TH", "+66"],
-  ["VN", "+84"],
-  ["CN", "+86"],
-  ["JP", "+81"],
-  ["KR", "+82"],
-  ["AU", "+61"],
-  ["NZ", "+64"],
-  ["CA", "+1"],
-  ["MX", "+52"],
-  ["BR", "+55"],
-  ["AR", "+54"],
-  ["CL", "+56"],
-  ["CO", "+57"],
-  ["PE", "+51"],
-  ["DE", "+49"],
-  ["FR", "+33"],
-  ["ES", "+34"],
-  ["IT", "+39"],
-  ["PT", "+351"],
-  ["NL", "+31"],
-  ["BE", "+32"],
-  ["CH", "+41"],
-  ["AT", "+43"],
-  ["SE", "+46"],
-  ["NO", "+47"],
-  ["DK", "+45"],
-  ["FI", "+358"],
-  ["IE", "+353"],
-  ["PL", "+48"],
-  ["CZ", "+420"],
-  ["GR", "+30"],
-  ["TR", "+90"],
-  ["RU", "+7"],
-  ["UA", "+380"],
-  ["ZA", "+27"],
-  ["NG", "+234"],
-  ["KE", "+254"],
-  ["GH", "+233"],
-  ["MA", "+212"],
-  ["TN", "+216"],
-  ["DZ", "+213"],
-  ["ET", "+251"],
-  ["TZ", "+255"],
-  ["UG", "+256"],
+  ["Saudi Arabia", "+966"],
+  ["United Arab Emirates", "+971"],
+  ["United States", "+1"],
+  ["United Kingdom", "+44"],
+  ["India", "+91"],
+  ["Qatar", "+974"],
+  ["Kuwait", "+965"],
+  ["Bahrain", "+973"],
+  ["Oman", "+968"],
+  ["Jordan", "+962"],
+  ["Egypt", "+20"],
+  ["Lebanon", "+961"],
+  ["Iraq", "+964"],
+  ["Pakistan", "+92"],
+  ["Bangladesh", "+880"],
+  ["Sri Lanka", "+94"],
+  ["Nepal", "+977"],
+  ["Malaysia", "+60"],
+  ["Singapore", "+65"],
+  ["Indonesia", "+62"],
+  ["Philippines", "+63"],
+  ["Thailand", "+66"],
+  ["Vietnam", "+84"],
+  ["China", "+86"],
+  ["Japan", "+81"],
+  ["South Korea", "+82"],
+  ["Australia", "+61"],
+  ["New Zealand", "+64"],
+  ["Canada", "+1"],
+  ["Mexico", "+52"],
+  ["Brazil", "+55"],
+  ["Argentina", "+54"],
+  ["Chile", "+56"],
+  ["Colombia", "+57"],
+  ["Peru", "+51"],
+  ["Germany", "+49"],
+  ["France", "+33"],
+  ["Spain", "+34"],
+  ["Italy", "+39"],
+  ["Portugal", "+351"],
+  ["Netherlands", "+31"],
+  ["Belgium", "+32"],
+  ["Switzerland", "+41"],
+  ["Austria", "+43"],
+  ["Sweden", "+46"],
+  ["Norway", "+47"],
+  ["Denmark", "+45"],
+  ["Finland", "+358"],
+  ["Ireland", "+353"],
+  ["Poland", "+48"],
+  ["Czechia", "+420"],
+  ["Greece", "+30"],
+  ["T\u00fcrkiye", "+90"],
+  ["Russia", "+7"],
+  ["Ukraine", "+380"],
+  ["South Africa", "+27"],
+  ["Nigeria", "+234"],
+  ["Kenya", "+254"],
+  ["Ghana", "+233"],
+  ["Morocco", "+212"],
+  ["Tunisia", "+216"],
+  ["Algeria", "+213"],
+  ["Ethiopia", "+251"],
+  ["Tanzania", "+255"],
+  ["Uganda", "+256"],
 ];
 
 export default function BookDemoModal() {
@@ -75,6 +75,23 @@ export default function BookDemoModal() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
+  const [ccOpen, setCcOpen] = useState(false);
+  const [country, setCountry] = useState(codes[0]);
+  const [query, setQuery] = useState("");
+  const ccRef = useRef(null);
+
+  // Close the country dropdown when clicking outside of it
+  useEffect(() => {
+    if (!ccOpen) return;
+    const onDown = (e) => {
+      if (ccRef.current && !ccRef.current.contains(e.target)) {
+        setCcOpen(false);
+        setQuery("");
+      }
+    };
+    document.addEventListener("pointerdown", onDown);
+    return () => document.removeEventListener("pointerdown", onDown);
+  }, [ccOpen]);
 
   // Any link pointing at /help#contact opens the modal instead
   useEffect(() => {
@@ -111,23 +128,26 @@ export default function BookDemoModal() {
     setSending(true);
     setError("");
     try {
-      const res = await fetch("https://formsubmit.co/ajax/info@kodeitglobal.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
+      const res = await fetch(
+        "https://formsubmit.co/ajax/info@kodeitglobal.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            Name: data.name,
+            Email: data.email,
+            Phone: [data.code, data.phone].filter(Boolean).join(" "),
+            Company: data.company || "-",
+            Remark: data.remark || "-",
+            _subject: "New Kodeit Ascend Demo Request",
+            _template: "table",
+            _replyto: data.email,
+          }),
         },
-        body: JSON.stringify({
-          Name: data.name,
-          Email: data.email,
-          Phone: [data.code, data.phone].filter(Boolean).join(" "),
-          Company: data.company || "-",
-          Remark: data.remark || "-",
-          _subject: "New Kodeit Ascend Demo Request",
-          _template: "table",
-          _replyto: data.email,
-        }),
-      });
+      );
       if (!res.ok) throw new Error("bad status");
       setSent(true);
     } catch {
@@ -216,17 +236,79 @@ export default function BookDemoModal() {
               <label>
                 Mobile Number
                 <span className="bd-phone">
-                  <select
-                    name="code"
-                    defaultValue="+966"
-                    aria-label="Country code"
+                  <span
+                    className={`bd-cc${ccOpen ? " is-open" : ""}`}
+                    ref={ccRef}
                   >
-                    {codes.map(([cc, dial]) => (
-                      <option key={cc} value={dial}>
-                        {cc} {dial}
-                      </option>
-                    ))}
-                  </select>
+                    <button
+                      type="button"
+                      className="bd-cc-btn"
+                      aria-haspopup="listbox"
+                      aria-expanded={ccOpen}
+                      aria-label={`Country code: ${country[0]} ${country[1]}`}
+                      onClick={() => {
+                        setCcOpen((v) => !v);
+                        setQuery("");
+                      }}
+                    >
+                      {country[1]}
+                      <svg
+                        className="chev"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    </button>
+                    {ccOpen && (
+                      <span className="bd-cc-panel">
+                        <input
+                          type="text"
+                          className="bd-cc-search"
+                          placeholder="Search country…"
+                          value={query}
+                          autoFocus
+                          onChange={(e) => setQuery(e.target.value)}
+                        />
+                        <ul role="listbox" aria-label="Country codes">
+                          {codes
+                            .filter(
+                              ([name, dial]) =>
+                                name
+                                  .toLowerCase()
+                                  .includes(query.trim().toLowerCase()) ||
+                                dial.includes(query.trim()),
+                            )
+                            .map(([name, dial]) => (
+                              <li key={name}>
+                                <button
+                                  type="button"
+                                  role="option"
+                                  aria-selected={name === country[0]}
+                                  className={
+                                    name === country[0] ? "is-on" : ""
+                                  }
+                                  onClick={() => {
+                                    setCountry([name, dial]);
+                                    setCcOpen(false);
+                                    setQuery("");
+                                  }}
+                                >
+                                  <span>{name}</span>
+                                  <em>{dial}</em>
+                                </button>
+                              </li>
+                            ))}
+                        </ul>
+                      </span>
+                    )}
+                    <input type="hidden" name="code" value={country[1]} />
+                  </span>
                   <input
                     type="tel"
                     name="phone"
