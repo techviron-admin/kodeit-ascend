@@ -162,7 +162,7 @@ export default function HomePage() {
               <Link href="/question-bank" className="btn-grad">
                 Try it now
               </Link>
-              <Link href="/help" className="link-orange">
+              <Link href="/help" className="link-orange hide-sm">
                 Learn more
                 <Arrow />
               </Link>

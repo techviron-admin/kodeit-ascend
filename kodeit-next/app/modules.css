@@ -443,11 +443,16 @@
   justify-content: center;
   margin-top: 26px;
 }
-.cf-dots span {
+.cf-dots span,
+.cf-dots button {
   width: 24px;
   height: 4px;
   border-radius: 2px;
   background: #dfdfdf;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 .cf-dots .on {
   background: #ff732b;
@@ -684,11 +689,27 @@
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   margin-bottom: 42px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #c9d3e0 #efefef;
+}
+.ax-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+.ax-tabs::-webkit-scrollbar-thumb {
+  background: #c9d3e0;
+  border-radius: 999px;
+}
+.ax-tabs::-webkit-scrollbar-track {
+  background: #efefef;
+  border-radius: 999px;
 }
 .ax-tab {
+  flex-shrink: 0;
+  white-space: nowrap;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -782,7 +803,8 @@
   grid-template-columns: 1.1fr 1fr 1fr 1fr;
   align-items: center;
 }
-.ax-band-title {
+.ax-band-title,
+.page-home .ax-band-title {
   font-size: clamp(24px, 2.6vw, 30px);
   line-height: 1.35;
   font-weight: 700;
@@ -1251,4 +1273,19 @@
 .bd-phone > input[type="tel"] {
   flex: 1;
   min-width: 0;
+}
+
+/* Center tabs when they fit; scroll when they don't */
+.ax-tab:first-child {
+  margin-left: auto;
+}
+.ax-tab:last-child {
+  margin-right: auto;
+}
+
+/* Utility: hide on small screens */
+@media (max-width: 640px) {
+  .hide-sm {
+    display: none !important;
+  }
 }

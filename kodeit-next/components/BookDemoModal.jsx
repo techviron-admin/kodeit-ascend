@@ -290,9 +290,7 @@ export default function BookDemoModal() {
                                   type="button"
                                   role="option"
                                   aria-selected={name === country[0]}
-                                  className={
-                                    name === country[0] ? "is-on" : ""
-                                  }
+                                  className={name === country[0] ? "is-on" : ""}
                                   onClick={() => {
                                     setCountry([name, dial]);
                                     setCcOpen(false);

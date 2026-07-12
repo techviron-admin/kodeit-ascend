@@ -1,6 +1,7 @@
 ﻿import ModuleHero from "@/components/ModuleHero";
 import ModuleCta from "@/components/ModuleCta";
 import SiteFooter from "@/components/SiteFooter";
+import FrameworkCarousel from "@/components/FrameworkCarousel";
 
 export const metadata = {
   title: "Competencies Framework",
@@ -82,29 +83,7 @@ export default function CompetenciesPage() {
               <span className="kd-eyebrow">POPULAR FRAMEWORKS</span>
               <h2>Build on trusted competencies frameworks</h2>
             </div>
-            <div className="cf-row">
-              {frameworks.map(([abbr, name]) => (
-                <article className="cf-card" key={abbr}>
-                  <span className="cf-icon">
-                    <img
-                      src="/images/comp-framework.svg"
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
-                  </span>
-                  <div>
-                    <h3>{abbr}</h3>
-                    <p>{name}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <div className="cf-dots" aria-hidden="true">
-              <span className="on"></span>
-              <span></span>
-              <span></span>
-            </div>
+            <FrameworkCarousel items={frameworks} />
           </div>
         </section>
 
