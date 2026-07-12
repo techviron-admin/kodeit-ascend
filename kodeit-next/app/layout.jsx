@@ -4,6 +4,7 @@ import "./home.css";
 import "./product.css";
 import "./modules.css";
 import SiteHeader from "@/components/SiteHeader";
+import BookDemoModal from "@/components/BookDemoModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         </a>
         <SiteHeader />
         {children}
+        <BookDemoModal />
       </body>
     </html>
   );

@@ -984,3 +984,139 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   Book a Demo modal
+   ============================================================ */
+.bd-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(2, 27, 46, 0.55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow-y: auto;
+}
+.bd-modal {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: calc(100vh - 36px);
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 38px);
+  box-shadow: 0 30px 80px -20px rgba(2, 27, 46, 0.45);
+}
+.bd-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #6d6d6d;
+  background: #f4f6f9;
+}
+.bd-close:hover {
+  color: #021b2e;
+}
+.bd-close svg {
+  width: 18px;
+  height: 18px;
+}
+.page-home .bd-modal h3,
+.bd-modal h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #021b2e;
+  margin-bottom: 6px;
+}
+.bd-sub {
+  font-size: 15px;
+  color: #6d6d6d;
+  margin-bottom: 22px;
+}
+.bd-modal form {
+  display: grid;
+  gap: 14px;
+}
+.bd-modal label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #34404c;
+}
+.bd-modal .req {
+  color: #ff752d;
+}
+.bd-modal input,
+.bd-modal select,
+.bd-modal textarea {
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-size: 15px;
+  color: #021b2e;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.bd-modal input:focus,
+.bd-modal select:focus,
+.bd-modal textarea:focus {
+  border-color: #1b5cc4;
+}
+.bd-modal textarea {
+  resize: vertical;
+  min-height: 74px;
+}
+.bd-phone {
+  display: flex;
+  gap: 10px;
+}
+.bd-phone select {
+  flex: 0 0 118px;
+}
+.bd-hp {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0;
+  pointer-events: none;
+}
+.bd-submit {
+  width: 100%;
+  margin-top: 6px;
+  border: 0;
+}
+.bd-success {
+  text-align: center;
+  padding: 26px 6px 10px;
+}
+.bd-success .tick {
+  display: inline-grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #e7fbe7;
+  color: #16ab11;
+  margin-bottom: 18px;
+}
+.bd-success .tick svg {
+  width: 36px;
+  height: 36px;
+}
+.bd-success p {
+  font-size: 15px;
+  color: #6d6d6d;
+  margin: 8px 0 24px;
+}
