@@ -1120,3 +1120,16 @@
   color: #6d6d6d;
   margin: 8px 0 24px;
 }
+
+.bd-error {
+  font-size: 14px;
+  color: #c0392b;
+  background: #fdecea;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.bd-submit:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+}

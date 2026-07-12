@@ -3,24 +3,78 @@
 import { useEffect, useState } from "react";
 
 const codes = [
-  ["SA", "+966"], ["AE", "+971"], ["US", "+1"], ["GB", "+44"], ["IN", "+91"],
-  ["QA", "+974"], ["KW", "+965"], ["BH", "+973"], ["OM", "+968"], ["JO", "+962"],
-  ["EG", "+20"], ["LB", "+961"], ["IQ", "+964"], ["PK", "+92"], ["BD", "+880"],
-  ["LK", "+94"], ["NP", "+977"], ["MY", "+60"], ["SG", "+65"], ["ID", "+62"],
-  ["PH", "+63"], ["TH", "+66"], ["VN", "+84"], ["CN", "+86"], ["JP", "+81"],
-  ["KR", "+82"], ["AU", "+61"], ["NZ", "+64"], ["CA", "+1"], ["MX", "+52"],
-  ["BR", "+55"], ["AR", "+54"], ["CL", "+56"], ["CO", "+57"], ["PE", "+51"],
-  ["DE", "+49"], ["FR", "+33"], ["ES", "+34"], ["IT", "+39"], ["PT", "+351"],
-  ["NL", "+31"], ["BE", "+32"], ["CH", "+41"], ["AT", "+43"], ["SE", "+46"],
-  ["NO", "+47"], ["DK", "+45"], ["FI", "+358"], ["IE", "+353"], ["PL", "+48"],
-  ["CZ", "+420"], ["GR", "+30"], ["TR", "+90"], ["RU", "+7"], ["UA", "+380"],
-  ["ZA", "+27"], ["NG", "+234"], ["KE", "+254"], ["GH", "+233"], ["MA", "+212"],
-  ["TN", "+216"], ["DZ", "+213"], ["ET", "+251"], ["TZ", "+255"], ["UG", "+256"],
+  ["SA", "+966"],
+  ["AE", "+971"],
+  ["US", "+1"],
+  ["GB", "+44"],
+  ["IN", "+91"],
+  ["QA", "+974"],
+  ["KW", "+965"],
+  ["BH", "+973"],
+  ["OM", "+968"],
+  ["JO", "+962"],
+  ["EG", "+20"],
+  ["LB", "+961"],
+  ["IQ", "+964"],
+  ["PK", "+92"],
+  ["BD", "+880"],
+  ["LK", "+94"],
+  ["NP", "+977"],
+  ["MY", "+60"],
+  ["SG", "+65"],
+  ["ID", "+62"],
+  ["PH", "+63"],
+  ["TH", "+66"],
+  ["VN", "+84"],
+  ["CN", "+86"],
+  ["JP", "+81"],
+  ["KR", "+82"],
+  ["AU", "+61"],
+  ["NZ", "+64"],
+  ["CA", "+1"],
+  ["MX", "+52"],
+  ["BR", "+55"],
+  ["AR", "+54"],
+  ["CL", "+56"],
+  ["CO", "+57"],
+  ["PE", "+51"],
+  ["DE", "+49"],
+  ["FR", "+33"],
+  ["ES", "+34"],
+  ["IT", "+39"],
+  ["PT", "+351"],
+  ["NL", "+31"],
+  ["BE", "+32"],
+  ["CH", "+41"],
+  ["AT", "+43"],
+  ["SE", "+46"],
+  ["NO", "+47"],
+  ["DK", "+45"],
+  ["FI", "+358"],
+  ["IE", "+353"],
+  ["PL", "+48"],
+  ["CZ", "+420"],
+  ["GR", "+30"],
+  ["TR", "+90"],
+  ["RU", "+7"],
+  ["UA", "+380"],
+  ["ZA", "+27"],
+  ["NG", "+234"],
+  ["KE", "+254"],
+  ["GH", "+233"],
+  ["MA", "+212"],
+  ["TN", "+216"],
+  ["DZ", "+213"],
+  ["ET", "+251"],
+  ["TZ", "+255"],
+  ["UG", "+256"],
 ];
 
 export default function BookDemoModal() {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
   // Any link pointing at /help#contact opens the modal instead
   useEffect(() => {
@@ -50,12 +104,39 @@ export default function BookDemoModal() {
     };
   }, [open]);
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.currentTarget));
     if (data.website) return; // honeypot: silently drop bots
-    // TODO: POST to Google Apps Script endpoint (sheet + email) — next step
-    setSent(true);
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/info@kodeitglobal.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          Name: data.name,
+          Email: data.email,
+          Phone: [data.code, data.phone].filter(Boolean).join(" "),
+          Company: data.company || "-",
+          Remark: data.remark || "-",
+          _subject: "New Kodeit Ascend Demo Request",
+          _template: "table",
+          _replyto: data.email,
+        }),
+      });
+      if (!res.ok) throw new Error("bad status");
+      setSent(true);
+    } catch {
+      setError(
+        "Something went wrong sending your request. Please try again or email us at info@kodeitglobal.com.",
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   if (!open) return null;
@@ -105,8 +186,8 @@ export default function BookDemoModal() {
             </span>
             <h3>Request received!</h3>
             <p>
-              Thanks for your interest in Kodeit Ascend. Our team will reach
-              out to you shortly.
+              Thanks for your interest in Kodeit Ascend. Our team will reach out
+              to you shortly.
             </p>
             <button className="btn-grad" onClick={() => setOpen(false)}>
               Done
@@ -135,7 +216,11 @@ export default function BookDemoModal() {
               <label>
                 Mobile Number
                 <span className="bd-phone">
-                  <select name="code" defaultValue="+966" aria-label="Country code">
+                  <select
+                    name="code"
+                    defaultValue="+966"
+                    aria-label="Country code"
+                  >
                     {codes.map(([cc, dial]) => (
                       <option key={cc} value={dial}>
                         {cc} {dial}
@@ -167,8 +252,13 @@ export default function BookDemoModal() {
                 className="bd-hp"
                 aria-hidden="true"
               />
-              <button type="submit" className="btn-grad bd-submit">
-                Submit Request
+              {error && <p className="bd-error">{error}</p>}
+              <button
+                type="submit"
+                className="btn-grad bd-submit"
+                disabled={sending}
+              >
+                {sending ? "Sending…" : "Submit Request"}
               </button>
             </form>
           </>
