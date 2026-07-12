@@ -8,11 +8,7 @@ export const metadata = {
     "Build, organize, and reuse high quality questions across assessments with ease.",
 };
 
-const stats = [
-  ["qb-stat-questions.svg", "16,000 +", "Questions"],
-  ["qb-stat-keyboards.svg", "Keyboards", "Multiple Layouts"],
-  ["qb-stat-grades.svg", "All", "Grade Levels"],
-];
+const stats = [["qb-stat-questions.svg", "18,000 +", "Questions"]];
 
 const features = [
   ["qb-subjects.svg", "Subjects", "Browse and manage questions by subjects."],
@@ -71,7 +67,7 @@ export default function QuestionBankPage() {
             style={{ left: "22%", top: 20, width: 49 }}
           />
           <div className="container">
-            <div className="qs-band">
+            <div className="qs-band qs-band--single">
               {stats.map(([icon, value, label]) => (
                 <div className="qs-item" key={label}>
                   <span className="qs-icon">
