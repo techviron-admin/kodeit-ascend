@@ -77,7 +77,7 @@ export default function SiteFooter({ tint = false }) {
         </div>
         <div className="kd-footer-bottom">
           <span className="copy">
-            &copy; 2025 KODEIT | All Rights Reserved.
+            &copy; 2026 KODEIT | All Rights Reserved.
           </span>
           <div className="kd-footer-legal">
             <a href="#">Privacy Policy</a>

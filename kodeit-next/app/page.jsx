@@ -219,26 +219,6 @@ export default function HomePage() {
                 anecdotes. Real-time dashboards surface the signal from the
                 noise so you can move resources where they matter.
               </p>
-              <div className="kd-logos">
-                <Image
-                  src="/images/partner-logo.png"
-                  alt="Partner logo"
-                  width={179}
-                  height={30}
-                />
-                <Image
-                  src="/images/partner-logo.png"
-                  alt="Partner logo"
-                  width={179}
-                  height={30}
-                />
-                <Image
-                  src="/images/partner-logo.png"
-                  alt="Partner logo"
-                  width={179}
-                  height={30}
-                />
-              </div>
               <div className="kd-actions">
                 <Link href="/reports" className="btn-grad">
                   Explore
