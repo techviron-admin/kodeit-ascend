@@ -2268,6 +2268,22 @@ h4 {
    Mobile nav: product submenu accordion + tidy panel
    ============================================================ */
 @media (max-width: 960px) {
+  .site-nav .nav-item {
+    width: 100%;
+  }
+  .site-nav .nav-item .nav-link {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-nav .nav-link .chev {
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: var(--ink);
+    flex-shrink: 0;
+  }
   .site-nav .menu-panel {
     position: static;
     min-width: 0;

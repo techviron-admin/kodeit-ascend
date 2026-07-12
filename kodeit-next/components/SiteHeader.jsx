@@ -64,10 +64,7 @@ export default function SiteHeader() {
   };
 
   return (
-    <header
-      ref={headerRef}
-      className={`site-header${open ? " nav-open" : ""}`}
-    >
+    <header ref={headerRef} className={`site-header${open ? " nav-open" : ""}`}>
       <div className="container nav-wrap">
         <Link href="/" className="logo-brand" aria-label="Kodeit Ascend home">
           <Image
