@@ -51,7 +51,7 @@ const categories = [
   ],
   [
     "icon-assessments.svg",
-    "Assessments Reports",
+    "Post Assessment Report",
     "Analyze assessments results and question-level insights.",
   ],
 ];
