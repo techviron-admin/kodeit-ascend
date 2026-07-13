@@ -84,7 +84,13 @@ const sw = {
 const modes = [
   {
     icon: (
-      <svg viewBox="0 0 24 24" width="44" height="44" style={{ color: "#1b5cc4" }} {...sw}>
+      <svg
+        viewBox="0 0 24 24"
+        width="44"
+        height="44"
+        style={{ color: "#1b5cc4" }}
+        {...sw}
+      >
         <path d="M6 9V3h12v6" />
         <path d="M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2" />
         <rect x="6" y="14" width="12" height="7" rx="1" />
@@ -95,7 +101,13 @@ const modes = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" width="44" height="44" style={{ color: "#1b5cc4" }} {...sw}>
+      <svg
+        viewBox="0 0 24 24"
+        width="44"
+        height="44"
+        style={{ color: "#1b5cc4" }}
+        {...sw}
+      >
         <path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2" />
         <path d="M3 12h18" />
       </svg>
@@ -105,7 +117,13 @@ const modes = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" width="44" height="44" style={{ color: "#1b5cc4" }} {...sw}>
+      <svg
+        viewBox="0 0 24 24"
+        width="44"
+        height="44"
+        style={{ color: "#1b5cc4" }}
+        {...sw}
+      >
         <path d="M12 20h9" />
         <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
       </svg>
@@ -115,7 +133,13 @@ const modes = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" width="44" height="44" style={{ color: "#1b5cc4" }} {...sw}>
+      <svg
+        viewBox="0 0 24 24"
+        width="44"
+        height="44"
+        style={{ color: "#1b5cc4" }}
+        {...sw}
+      >
         <path d="M3 3v18h18" />
         <path d="M8 17v-5M13 17V8M18 17v-8" />
       </svg>
