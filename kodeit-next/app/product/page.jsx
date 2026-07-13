@@ -6,7 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Product Overview",
   description:
-    "One integrated portal covering the full assessment cycle: item authoring and governance, standard and adaptive delivery, AI-assisted grading, competency tagging, and growth analytics across your network.",
+    "Explore the complete suite of tools and features designed to streamline assessment, learning, and growth across your organization.",
 };
 
 const tools = [
@@ -148,10 +148,9 @@ export default function ProductPage() {
               <span className="kd-eyebrow">Product Overview</span>
               <h1>Kodeit Ascend</h1>
               <p className="sub">
-                One integrated portal covering the full assessment cycle: item
-                authoring and governance, standard and adaptive delivery,
-                AI-assisted grading, competency tagging, and growth analytics
-                across your network.
+                Explore the complete suite of tools and features designed to
+                streamline assessment, learning, and growth across your
+                organization.
               </p>
               <Link href="/#pilot" className="btn-grad">
                 Book a Demo
@@ -242,13 +241,10 @@ export default function ProductPage() {
           <div className="container">
             <div className="pd-scale-box">
               <div>
-                <h2>Deployable wherever your schools are</h2>
+                <h2>Designed to scale with your institution</h2>
                 <p className="sub">
-                  Kodeit Ascend works across curricula (CCSS, NGSS, IB, UK, and
-                  national frameworks), languages, and connectivity contexts,
-                  from urban metros to low-bandwidth campuses. Paper-based
-                  delivery with bulk answer-sheet scanning extends the platform
-                  to every grade and classroom.
+                  Kodeit Ascend adapts to your needs&mdash;whether you&rsquo;re
+                  a single school or a large organization.
                 </p>
                 <Link href="/help#contact" className="btn-grad">
                   Contact Us
