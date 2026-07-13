@@ -17,11 +17,11 @@ export const metadata = {
   metadataBase: new URL("https://kodeit-ascend.vercel.app"),
   title: {
     default:
-      "Kodeit Ascend — See every student clearly with AI-driven competency data",
+      "Kodeit Ascend — A single, evidence-based system for academic governance",
     template: "%s — Kodeit Ascend",
   },
   description:
-    "Kodeit Ascend replaces guesswork with precision. Map assessments to standards, generate questions instantly, and watch school performance emerge from the noise.",
+    "Kodeit Ascend is a web-based assessment and learning analytics platform for K–12 schools and multi-campus networks. Administer standards-aligned assessments, track growth, and generate insight at the learner, class, school, and network level.",
 };
 
 export default function RootLayout({ children }) {

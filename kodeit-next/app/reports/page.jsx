@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Reports",
   description:
-    "Get powerful insights with our AI-powered reports and make data driven decisions.",
+    "Statistical measures — average, range, and standard deviation — accompany growth calculations at every level, suitable for classroom action and regulatory submission.",
 };
 
 const categories = [
@@ -20,6 +20,11 @@ const categories = [
     "Evaluate teacher effectiveness and instructional impact.",
   ],
   [
+    "icon-teachers.svg",
+    "Teachers Reports",
+    "Evaluate teacher effectiveness and instructional impact.",
+  ],
+  [
     "icon-schools.svg",
     "School Reports",
     "Monitor school performance and key operational metrics.",
@@ -27,7 +32,7 @@ const categories = [
   [
     "icon-competencies.svg",
     "Competency Reports",
-    "Access competency mastery and skills development.",
+    "Proficiency distribution — Proficient / Developing / Struggling — per competency, by school, grade, and year.",
   ],
   [
     "icon-network.svg",
@@ -37,12 +42,12 @@ const categories = [
   [
     "icon-analytics.svg",
     "Growth Reports",
-    "Track learning growth and improvement over time.",
+    "BOY vs EOY comparison, multi-year trends, subject and grade filters, growth percentage with average, range, and standard deviation.",
   ],
   [
     "icon-comparative.svg",
     "Comparative Reports",
-    "Compare performance across groups, schools or time periods.",
+    "School vs school; school vs network or district average; learner vs class, school, or network.",
   ],
   [
     "icon-assessments.svg",
@@ -133,7 +138,7 @@ export default function ReportsPage() {
           circles
           eyebrow="Reports"
           title="Reports"
-          sub="Get powerful insights with our AI-powered reports and make data driven decisions."
+          sub="Reports suitable for classroom action and regulatory submission. Statistical measures — average, range, standard deviation — accompany growth calculations at every level, so the same evidence serves the teacher, the board, and the regulator."
           primaryHref="#categories"
           primaryLabel="Explore Reports"
           secondaryHref="/analytics"

@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Question Bank",
   description:
-    "Build, organize, and reuse high quality questions across assessments with ease.",
+    "18,000+ curated, standards-aligned items across English, Math, and Science, Grades 1–12 — operational from day one.",
 };
 
 const stats = [["qb-stat-questions.svg", "18,000 +", "Questions"]];
@@ -49,7 +49,7 @@ export default function QuestionBankPage() {
           deco
           eyebrow="Question Bank"
           title="Question Bank"
-          sub="Build, organize, and reuse high quality questions across assessments with ease."
+          sub="18,000+ curated, standards-aligned items, operational from day one. Most assessment platforms ship as empty repositories; schools spend the first year populating them. Kodeit Ascend delivers 500+ items per grade per subject across English, Math, and Science, Grades 1–12, projected to grow past 25,000 items in Year 1."
           primaryHref="/help#contact"
           primaryLabel="Create Questions"
           secondaryHref="#explore"
@@ -139,8 +139,8 @@ export default function QuestionBankPage() {
         </section>
 
         <ModuleCta
-          title="Need help building your question bank?"
-          sub="Our team is here to help you create high quality questions and streamline your assessment process."
+          title="Extend the library your way"
+          sub="Expand through manual authoring, bulk CSV upload, or AI-assisted generation. Every item moves through a managed lifecycle — Draft, Operational, Retired — with a reviewer approval gate for AI-generated content."
         />
       </main>
       <SiteFooter />

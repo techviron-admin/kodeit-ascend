@@ -35,13 +35,13 @@ export default function HomePage() {
             aria-hidden="true"
           />
           <div className="container kd-hero-inner">
-            <h1>
-              See every student clearly with AI&#8209;driven competency data
-            </h1>
+            <h1>A single, evidence-based system for academic governance.</h1>
             <p className="lead">
-              Kodeit Ascend replaces guesswork with precision. Map assessments
-              to standards, generate questions instantly, and watch school
-              performance emerge from the noise.
+              Kodeit Ascend is a web-based assessment and learning analytics
+              platform for K–12 schools and multi-campus networks. Administer
+              consistent, standards-aligned assessments, track academic growth
+              over time, and generate actionable insight at the learner, class,
+              school, and network level.
             </p>
             <a href="#pilot" className="btn-grad">
               Request a demo
@@ -78,11 +78,13 @@ export default function HomePage() {
           <div className="container">
             <div className="kd-head">
               <span className="kd-eyebrow">Platform</span>
-              <h2>One platform to build, measure, and grow competency</h2>
+              <h2>One continuous measurement cycle, from design to decision</h2>
               <p className="sub">
-                Stop juggling spreadsheets and disconnected tools. Kodeit Ascend
-                gives you a single source of truth for every standard, every
-                assessment, and every student.
+                Kodeit Ascend replaces fragmented, single-event testing with a
+                continuous cycle: assessment design and delivery, AI-assisted
+                grading and competency tagging, growth analytics, and network
+                benchmarking. All of it accessible to administrators, school
+                leaders, teachers, and learners through one integrated portal.
               </p>
             </div>
             <div className="kd-cards">
@@ -94,9 +96,11 @@ export default function HomePage() {
                   height={248}
                   sizes="(max-width: 980px) 100vw, 360px"
                 />
-                <h3>AI-powered assessments that write themselves</h3>
+                <h3>An operational item bank from day one</h3>
                 <p>
-                  Generate standards-aligned questions in seconds, not hours.
+                  18,000+ standards-aligned items in English, Math, and Science
+                  across Grades 1–12, with AI-assisted generation to expand the
+                  library further.
                 </p>
               </article>
               <article className="kd-card">
@@ -107,8 +111,12 @@ export default function HomePage() {
                   height={248}
                   sizes="(max-width: 980px) 100vw, 360px"
                 />
-                <h3>Comprehensive competency mapping across any framework</h3>
-                <p>Track mastery from CCSS to PISA with a unified taxonomy.</p>
+                <h3>Frameworks delivered, not built from scratch</h3>
+                <p>
+                  CCSS, NGSS, and PIRLS ship pre-loaded, pre-calibrated, and
+                  pre-tagged to the item bank, so competency-level reports
+                  generate from the first assessment, not after a year of setup.
+                </p>
               </article>
               <article className="kd-card">
                 <Image
@@ -118,10 +126,12 @@ export default function HomePage() {
                   height={248}
                   sizes="(max-width: 980px) 100vw, 360px"
                 />
-                <h3>Actionable analytics that reveal the truth</h3>
+                <h3>Comparative intelligence at every level</h3>
                 <p>
-                  See growth trends, gaps, and opportunities across entire
-                  networks.
+                  Growth trajectories, competency gaps, and cross-campus
+                  comparisons, with statistical measures (average, range,
+                  standard deviation) suitable for board review and regulatory
+                  submission.
                 </p>
               </article>
             </div>
@@ -149,13 +159,13 @@ export default function HomePage() {
           <div className="container">
             <div className="kd-head" style={{ marginBottom: 40 }}>
               <span className="kd-eyebrow">Question bank</span>
-              <h2>
-                Generate a thousand perfect questions before your coffee cools
-              </h2>
+              <h2>A governed item bank, ready on day one</h2>
               <p className="sub">
-                The AI engine reads your standards and writes the items. Aligned
-                to DOK levels. Tagged to competencies. Ready for review. The
-                machine does the heavy lifting so you can do the thinking.
+                Every item carries full metadata: difficulty calibration (Growth
+                Metric Score 100–350), Depth of Knowledge (DOK 1–4), standard
+                codes, competency links, and feedback messages. AI-generated
+                items enter as drafts behind a reviewer approval gate, so
+                unapproved content never reaches a live assessment.
               </p>
             </div>
             <div className="kd-actions" style={{ marginBottom: 76 }}>
@@ -213,11 +223,12 @@ export default function HomePage() {
           <div className="container kd-split">
             <div className="kd-report-copy">
               <span className="kd-eyebrow">Reporting</span>
-              <h2>See the whole field from a single hill</h2>
+              <h2>Aligned reporting for classroom and boardroom</h2>
               <p className="sub">
-                A district leader needs the truth, not a collection of
-                anecdotes. Real-time dashboards surface the signal from the
-                noise so you can move resources where they matter.
+                When every stakeholder sees a different version of the truth,
+                decisions disconnect. Kodeit Ascend ensures the superintendent’s
+                board report and the teacher’s classroom dashboard read the same
+                data at different levels of aggregation.
               </p>
               <div className="kd-actions">
                 <Link href="/reports" className="btn-grad">
@@ -238,6 +249,109 @@ export default function HomePage() {
                 sizes="(max-width: 980px) 100vw, 520px"
               />
             </div>
+          </div>
+        </section>
+
+        {/* ============ Credibility ============ */}
+        <section className="kd-section" id="credibility">
+          <div className="container">
+            <div className="kd-head" style={{ marginBottom: 36 }}>
+              <span className="kd-eyebrow">Trusted at scale</span>
+              <h2>An education company, already deployed</h2>
+              <p className="sub">
+                When schools adopt Kodeit Ascend, they are partnering with an
+                education company whose products are already deployed across
+                500+ schools in 14+ countries — not a pure-play assessment
+                vendor.
+              </p>
+            </div>
+            <div className="md-band">
+              <div className="rp-stats">
+                <div className="rp-stat">
+                  <span className="ic">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 21V8l8-5 8 5v13" />
+                      <path d="M4 21h16M9 21v-6h6v6" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span className="n">500+</span>
+                    <span className="l">Schools served</span>
+                  </div>
+                </div>
+                <div className="rp-stat">
+                  <span className="ic">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M3 12h18M12 3c2.5 2.4 3.9 5.6 3.9 9s-1.4 6.6-3.9 9c-2.5-2.4-3.9-5.6-3.9-9S9.5 5.4 12 3Z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span className="n">14+</span>
+                    <span className="l">Countries</span>
+                  </div>
+                </div>
+                <div className="rp-stat">
+                  <span className="ic">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="9" r="5" />
+                      <path d="m8.5 13.5-1.5 7 5-3 5 3-1.5-7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span className="n">ISTE</span>
+                    <span className="l">Recognized</span>
+                  </div>
+                </div>
+                <div className="rp-stat">
+                  <span className="ic">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M8 13 3.5 8.5 7 5l3 2h4l3-2 3.5 3.5L20 13" />
+                      <path d="M8 13v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-5" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span className="n">McGraw Hill</span>
+                    <span className="l">Partnership</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p className="sub" style={{ textAlign: "center", marginTop: 24 }}>
+              Institutional clients including Maarif Training Academy.
+            </p>
           </div>
         </section>
 
@@ -268,8 +382,15 @@ export default function HomePage() {
                   sizes="(max-width: 980px) 100vw, 400px"
                 />
                 <span className="tag">Teachers</span>
-                <h3>Reclaim the hours lost to manual grading</h3>
-                <p>The machine scores the papers. You teach the child.</p>
+                <h3>
+                  AI-assisted grading with the reasoning, not just the score
+                </h3>
+                <p>
+                  Short answers and essays are graded using DOK level and
+                  content focus, with instant feedback to students after
+                  submission — and a clear view of which standards the class has
+                  mastered and which need re-teaching.
+                </p>
                 <Link href="/assessments" className="card-link">
                   Learn
                   <Arrow />
@@ -284,8 +405,12 @@ export default function HomePage() {
                   sizes="(max-width: 980px) 100vw, 400px"
                 />
                 <span className="tag">Students</span>
-                <h3>Every child measured against their own potential</h3>
-                <p>Adaptive paths close gaps before they become failures.</p>
+                <h3>Every learner sees exactly where they stand</h3>
+                <p>
+                  After each assessment: question-by-question review, per-skill
+                  feedback, a personal growth trajectory, and AI-generated study
+                  guidance.
+                </p>
                 <Link href="/competencies" className="card-link">
                   Learn
                   <Arrow />
@@ -300,9 +425,11 @@ export default function HomePage() {
                   sizes="(max-width: 980px) 100vw, 400px"
                 />
                 <span className="tag">Leaders</span>
-                <h3>Curriculum alignment that is finally automatic</h3>
+                <h3>Institutional intelligence without operational burden</h3>
                 <p>
-                  Standards mapped. Evidence collected. Accreditation ready.
+                  Growth measured, skill gaps diagnosed, fair cross-campus
+                  comparison enabled, and regulatory reporting supported —
+                  without adding load to schools or teachers.
                 </p>
                 <Link href="/reports" className="card-link">
                   Learn
@@ -363,10 +490,12 @@ export default function HomePage() {
                 />
                 <div className="kd-step-body">
                   <span className="step-label">Step 2</span>
-                  <h3>Deploy assessments that measure what matters</h3>
+                  <h3>Deploy in the mode the decision requires</h3>
                   <p>
-                    Push assessments to any device. The AI generates the items.
-                    The students show their work. The data flows back clean.
+                    Formative, summative, benchmark, or diagnostic; standard or
+                    adaptive delivery; on screen or on paper via print-ready OMR
+                    booklets. The same item bank and reporting layer power every
+                    mode.
                   </p>
                   <Link href="/assessments" className="card-link">
                     Learn
@@ -411,14 +540,15 @@ export default function HomePage() {
                 sizes="(max-width: 1200px) 100vw, 1160px"
               />
               <div className="kd-cta-inner">
-                <h2>Start your pilot today</h2>
+                <h2>Book a demo</h2>
                 <p>
                   The first step is a conversation, not a commitment. Talk to an
-                  education specialist about a free pilot for your school or
-                  network.
+                  education specialist about a demo for your school or network.
+                  Most assessment platforms measure where learners are. Kodeit
+                  Ascend tells school leadership what to do about it.
                 </p>
                 <FakeButton className="btn-grad" done="Request received">
-                  Request
+                  Book a Demo
                 </FakeButton>
               </div>
             </div>

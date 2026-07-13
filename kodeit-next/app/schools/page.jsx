@@ -4,7 +4,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Schools",
   description:
-    "Create, manage, and support schools with centralized administration, curriculum, and reporting.",
+    "Standardised blueprints, difficulty calibration, DOK tagging, and standards alignment make results comparable across every school in a network.",
 };
 
 const sw = {
@@ -113,7 +113,7 @@ export default function SchoolsPage() {
           deco
           eyebrow="Schools"
           title="Schools"
-          sub="Create, manage, and support schools with centralized administration, curriculum, and reporting."
+          sub="Fair comparison across every campus. Standardised blueprints, difficulty calibration, DOK tagging, and standards alignment ensure results are comparable across all schools in a network — the foundation for cross-campus benchmarking leadership can trust."
           primaryHref="/help#contact"
           primaryLabel="Manage Schools"
           secondaryHref="#reporting"

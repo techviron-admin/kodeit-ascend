@@ -18,8 +18,8 @@ export default function SiteFooter({ tint = false }) {
               />
             </Link>
             <p>
-              Kodeit Ascend is an all-in-one platform for assessment,
-              curriculum, and learning management.
+              Kodeit Ascend is a web-based assessment and learning analytics
+              platform for K–12 schools and multi-campus networks.
             </p>
             <div className="kd-social">
               <a href="#" aria-label="Social media">

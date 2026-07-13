@@ -6,7 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Analytics",
   description:
-    "Turn data into actionable insights and drive better learning outcomes.",
+    "Measure growth, diagnose skill gaps, enable fair cross-campus comparison, and support regulatory reporting from the same assessment data.",
 };
 
 const sw = {
@@ -95,24 +95,23 @@ const bandFeats = [
       <path d="m4 9 5-4 4 3 6-5" />
       <path d="M15 3h4v4" />
     </svg>,
-    "Real Time Insights",
-    "Stay up to date with live data.",
+    "Statistical rigor",
+    "Average, range, and standard deviation accompany every growth calculation.",
   ],
   [
     <svg key="i" viewBox="0 0 24 24" {...sw}>
       <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z" />
       <path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z" />
     </svg>,
-    "AI Powered",
-    "Uncover patterns and get smarter recommendations.",
+    "AI insights",
+    "Learner strengths, improvement areas, and study tips, with the reasoning behind every AI grade.",
   ],
   [
     <svg key="i" viewBox="0 0 24 24" {...sw}>
-      <path d="M12 3 5 6v5c0 4.4 3 8.4 7 9.6 4-1.2 7-5.2 7-9.6V6l-7-3Z" />
-      <path d="m9 12 2 2 4-4" />
+      <path d="M4 20v-4h4v-4h4V8h4V4h4" />
     </svg>,
-    "Secure & Compliant",
-    "Your data is protected and privacy first.",
+    "Difficulty progression",
+    "See how item difficulty adapted through each assessment.",
   ],
 ];
 
@@ -125,7 +124,7 @@ export default function AnalyticsPage() {
           circles
           eyebrow="Analytics"
           title="Analytics"
-          sub="Turn data into actionable insights and drive better learning outcomes."
+          sub="Turn test results into institutional intelligence. Measure growth, diagnose skill gaps, enable fair cross-campus comparison, and support regulatory reporting — from the same underlying assessment data."
           primaryHref="#insights"
           primaryLabel="Explore Analytics"
           secondaryHref="/dashboard"

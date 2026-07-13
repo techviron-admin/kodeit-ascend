@@ -6,17 +6,38 @@ import FrameworkCarousel from "@/components/FrameworkCarousel";
 export const metadata = {
   title: "Competencies Framework",
   description:
-    "Define, manage, track competencies to build stronger learning outcomes and future ready skills.",
+    "Internationally credible competency frameworks — CCSS, NGSS, PIRLS, TIMSS, PISA, CEFR, and national — pre-loaded and pre-tagged to the item bank.",
 };
 
 const frameworks = [
-  ["CCSS", "Common Core State Standards"],
-  ["NGSS", "Next Generation Science Standards"],
-  ["PIRLS", "Progress in International Reading Literacy Study"],
-  ["TIMSS", "Trends in International Mathematics and Science Study"],
-  ["PISA", "Programme for International Students Assessment"],
-  ["CEFR", "Common European Framework of Reference"],
-  ["National", "National Curriculum Framework"],
+  [
+    "CCSS",
+    "Common Core State Standards — ELA + Mathematics, Grades 1–12, full parent-child hierarchy to grade-level sub-skills.",
+  ],
+  [
+    "NGSS",
+    "Next Generation Science Standards — Science, complete 3D learning model.",
+  ],
+  [
+    "PIRLS",
+    "Progress in International Reading Literacy Study — primary-grade reading processes.",
+  ],
+  [
+    "TIMSS",
+    "Trends in International Mathematics and Science Study — content + cognition, for international benchmarking.",
+  ],
+  [
+    "PISA",
+    "Programme for International Students Assessment — upper-grade literacy and applied reasoning.",
+  ],
+  [
+    "CEFR",
+    "Common European Framework of Reference — English proficiency banding A1–C2.",
+  ],
+  [
+    "National",
+    "National Curriculum Framework — country-specific overlays that plug into the existing hierarchy.",
+  ],
 ];
 
 const manage = [

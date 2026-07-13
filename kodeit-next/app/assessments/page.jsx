@@ -6,7 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata = {
   title: "Assessments",
   description:
-    "Create, assign, deliver, and evaluate assessments with flexibility and control.",
+    "Formative, summative, benchmark, and diagnostic assessments, delivered standard or adaptive, on screen or on paper.",
 };
 
 const workflow = [
@@ -40,7 +40,7 @@ const workflow = [
     icon: "wf-deliver.svg",
     tint: "#e7fbe7",
     title: "3. Assessment Delivery",
-    desc: "Deliver assessments in the mode that best fits your needs.",
+    desc: "Deliver in the mode the decision requires. Standard blueprints ensure coverage across DOK, standards, and difficulty; adaptive delivery pinpoints ability in 20–25 minutes; paper assessments export as print-ready OMR booklets, scanned in bulk into the same learner record.",
     chips: [
       ["chip-online.svg", "Online"],
       ["chip-offline.svg", "Offline"],
@@ -52,7 +52,7 @@ const workflow = [
     icon: "wf-results.svg",
     tint: "#fff2e2",
     title: "4. Assessment Results",
-    desc: "Analyze performance and gain actionable insights.",
+    desc: "Results with the reasoning attached: accuracy and Growth Metric Score, question-by-question review with explanations, AI grading rationale for essays and short answers, per-skill competency labels, and a difficulty progression chart for adaptive tests.",
     chips: null,
   },
 ];
@@ -65,7 +65,7 @@ export default function AssessmentsPage() {
           variant="assess"
           eyebrow="Assessments"
           title="Assessments Module"
-          sub="Create, assign, deliver, and evaluate assessments with flexibility and control."
+          sub="Four assessment purposes, two delivery modes, one platform. Formative, summative, benchmark, and diagnostic assessments, delivered standard or adaptive, on screen or on paper. The same item bank, competency framework, and reporting layer power every mode, so growth data stays continuous."
           primaryHref="/help#contact"
           primaryLabel="Create Assessment"
           secondaryHref="/reports"

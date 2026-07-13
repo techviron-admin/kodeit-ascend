@@ -3,7 +3,8 @@ import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = {
   title: "User Management",
-  description: "Manage users and control access across platform.",
+  description:
+    "Role-based access for network leaders, principals, teachers, learners, and parents — each seeing the lens that matches their remit.",
 };
 
 const sw = {
@@ -87,7 +88,7 @@ const roles = [
       </svg>
     ),
     title: "Parents",
-    desc: "Stay informed with progress updates and performance reports.",
+    desc: "Personal growth trajectory, competency-by-competency feedback, and strengths and growth needs with specific study guidance.",
   },
 ];
 
@@ -99,7 +100,7 @@ export default function UsersPage() {
           variant="usersm"
           eyebrow="User Management"
           title="User Management"
-          sub="Manage users and control access across platform."
+          sub="Every stakeholder, one aligned view of the evidence. Role-based access for network leaders, principals, teachers, learners, and parents — each seeing the lens that matches their remit, drawn from the same underlying data. SSO integration and bulk CSV imports keep administration light at network scale."
           primaryHref="#roles"
           primaryLabel="Explore Roles"
           secondaryHref="/reports"
