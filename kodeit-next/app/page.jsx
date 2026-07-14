@@ -229,10 +229,6 @@ export default function HomePage() {
                 <Link href="/reports" className="btn-grad">
                   Explore
                 </Link>
-                <Link href="/analytics" className="link-orange">
-                  Learn
-                  <Arrow />
-                </Link>
               </div>
             </div>
             <div className="kd-split-visual">
