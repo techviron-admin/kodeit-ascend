@@ -1,7 +1,6 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
 import Arrow from "@/components/Arrow";
-import FakeButton from "@/components/FakeButton";
 import SiteFooter from "@/components/SiteFooter";
 
 export default function HomePage() {
@@ -426,9 +425,9 @@ export default function HomePage() {
                   Most assessment platforms measure where learners are. Kodeit
                   Ascend tells school leadership what to do about it.
                 </p>
-                <FakeButton className="btn-grad" done="Request received">
+                <Link href="/help#contact" className="btn-grad">
                   Book a Demo
-                </FakeButton>
+                </Link>
               </div>
             </div>
           </div>
