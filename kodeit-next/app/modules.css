@@ -1067,6 +1067,79 @@
   margin-top: 20px;
 }
 
+/* ---------- Competencies: built to extend ---------- */
+.ext-head {
+  max-width: 780px;
+  margin-bottom: 28px;
+}
+.page-home .ext-title {
+  font-size: clamp(30px, 4.6vw, 52px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #0b2f22;
+  margin-bottom: 16px;
+}
+.ext-title span {
+  color: #1c7e4a;
+}
+.ext-intro {
+  font-size: 17px;
+  line-height: 27px;
+  color: var(--kd-body);
+  margin: 0;
+}
+.ext-lead {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b2f22;
+  margin-bottom: 28px;
+}
+.ext-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 26px;
+}
+.ext-card img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 16px;
+}
+.page-home .ext-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0b2f22;
+  margin-bottom: 10px;
+}
+.ext-card p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--kd-body);
+}
+.ext-close {
+  margin-top: 42px;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--kd-body);
+}
+@media (max-width: 1080px) {
+  .ext-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px 26px;
+  }
+}
+@media (max-width: 680px) {
+  .ext-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 430px) {
+  .ext-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ============================================================
    Book a Demo modal
    ============================================================ */

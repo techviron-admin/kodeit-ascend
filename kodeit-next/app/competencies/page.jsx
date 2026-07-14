@@ -1,7 +1,6 @@
 ﻿import ModuleHero from "@/components/ModuleHero";
 import ModuleCta from "@/components/ModuleCta";
 import SiteFooter from "@/components/SiteFooter";
-import FrameworkCarousel from "@/components/FrameworkCarousel";
 
 export const metadata = {
   title: "Competencies Framework",
@@ -9,34 +8,32 @@ export const metadata = {
     "Internationally credible competency frameworks — CCSS, NGSS, PIRLS, TIMSS, PISA, CEFR, and national — pre-loaded and pre-tagged to the item bank.",
 };
 
-const frameworks = [
+const extensions = [
   [
-    "CCSS",
-    "Common Core State Standards — ELA + Mathematics, Grades 1–12, full parent-child hierarchy to grade-level sub-skills.",
+    "ext-timss.svg",
+    "TIMSS Mathematics and Science",
+    "for international benchmarking against content + cognition dimensions",
   ],
   [
-    "NGSS",
-    "Next Generation Science Standards — Science, complete 3D learning model.",
+    "ext-pisa.svg",
+    "PISA Reading, Mathematics, and Science Literacy",
+    "for upper-grade literacy and applied reasoning measurement",
+  ],
+  ["ext-cefr.svg", "CEFR", "for English language proficiency banding (A1–C2)"],
+  [
+    "ext-uk.svg",
+    "UK National Curriculum",
+    "for British international schools",
   ],
   [
-    "PIRLS",
-    "Progress in International Reading Literacy Study — primary-grade reading processes.",
+    "ext-au.svg",
+    "Australian Curriculum v9.0",
+    "for Australian-aligned schools",
   ],
   [
-    "TIMSS",
-    "Trends in International Mathematics and Science Study — content + cognition, for international benchmarking.",
-  ],
-  [
-    "PISA",
-    "Programme for International Students Assessment — upper-grade literacy and applied reasoning.",
-  ],
-  [
-    "CEFR",
-    "Common European Framework of Reference — English proficiency banding A1–C2.",
-  ],
-  [
-    "National",
-    "National Curriculum Framework — country-specific overlays that plug into the existing hierarchy.",
+    "ext-national.svg",
+    "National curriculum overlays",
+    "for any country-specific framework a school operates under",
   ],
 ];
 
@@ -57,21 +54,37 @@ export default function CompetenciesPage() {
           imageAlt="Kodeit Ascend competencies portal dashboard"
         />
 
-        {/* ============ Popular frameworks ============ */}
+        {/* ============ Built to extend ============ */}
         <section className="kd-section" id="frameworks">
-          <img
-            className="kd-deco"
-            src="/images/module-blurb-sm.svg"
-            alt=""
-            aria-hidden="true"
-            style={{ left: "18%", top: 10, width: 49 }}
-          />
           <div className="container">
-            <div className="kd-head">
-              <span className="kd-eyebrow">POPULAR FRAMEWORKS</span>
-              <h2>Build on trusted competencies frameworks</h2>
+            <div className="ext-head">
+              <h2 className="ext-title">
+                Built to Extend, <span>Not Replace</span>
+              </h2>
+              <p className="ext-intro">
+                Schools and networks rarely operate under a single curriculum
+                framework. Kodeit Ascend&rsquo;s architecture supports layering
+                additional frameworks on top of the global spine as overlays
+                &mdash; the core item tagging and reporting structure remains
+                intact, while local curriculum mappings extend it.
+              </p>
             </div>
-            <FrameworkCarousel items={frameworks} />
+            <p className="ext-lead">Supported extensions include:</p>
+            <div className="ext-grid">
+              {extensions.map(([icon, title, desc]) => (
+                <article className="ext-card" key={title}>
+                  <img src={`/images/${icon}`} alt="" width={56} height={56} />
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
+                </article>
+              ))}
+            </div>
+            <p className="ext-close">
+              New overlays plug into the existing hierarchy rather than
+              replacing it. A school running CCSS as its core reporting spine
+              can layer its national curriculum on top and generate reports
+              against both perspectives from the same assessment data.
+            </p>
           </div>
         </section>
 
