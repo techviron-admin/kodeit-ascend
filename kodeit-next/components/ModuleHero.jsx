@@ -14,6 +14,7 @@ export default function ModuleHero({
   secondaryHref,
   secondaryLabel,
   imageAlt,
+  image = "/images/module-hero.webp",
 }) {
   return (
     <section className={`md-hero md-hero--${variant}`}>
@@ -56,7 +57,7 @@ export default function ModuleHero({
           className={`md-hero-visual${deco ? " has-deco" : ""}${circles ? " has-circles" : ""}`}
         >
           <Image
-            src="/images/module-hero.webp"
+            src={image}
             alt={imageAlt}
             width={1162}
             height={716}
