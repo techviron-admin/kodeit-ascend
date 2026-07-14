@@ -1007,6 +1007,51 @@
   }
 }
 
+/* ---------- Schools — learner insights ---------- */
+.li-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.li-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.li-card svg {
+  width: 40px;
+  height: 40px;
+}
+.page-home .li-card h3 {
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #021b2e;
+  margin: 6px 0 0;
+}
+.li-card p {
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--kd-body);
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .li-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .li-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ============================================================
    Book a Demo modal
    ============================================================ */

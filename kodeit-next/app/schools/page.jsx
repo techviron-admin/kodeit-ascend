@@ -104,6 +104,73 @@ const curricula = [
   },
 ];
 
+const learnerInsights = [
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" {...sw} style={{ color: "#1b5cc4" }}>
+        <path d="M3 3v18h18" />
+        <rect x="7" y="12" width="3" height="5" rx="0.6" />
+        <rect x="12" y="9" width="3" height="8" rx="0.6" />
+        <rect x="17" y="6" width="3" height="11" rx="0.6" />
+      </svg>
+    ),
+    title: "Performance Summary",
+    desc: "View overall scores, accuracy, growth metrics, and assessment progress.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" {...sw} style={{ color: "#1b5cc4" }}>
+        <rect x="5" y="4" width="14" height="17" rx="2" />
+        <path d="M9 4.5V3.5h6v1" />
+        <path d="m8.7 12 2 2 4-4" />
+      </svg>
+    ),
+    title: "Question-by-Question Review",
+    desc: "Review every question with the correct answer, explanation, and feedback.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" {...sw} style={{ color: "#ff752d" }}>
+        <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z" />
+        <path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2Z" />
+      </svg>
+    ),
+    title: "AI-Assisted Evaluation",
+    desc: "Receive AI-powered scoring and feedback for essay and short-answer responses.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" {...sw} style={{ color: "#1aa97b" }}>
+        <circle cx="12" cy="12" r="8.5" />
+        <circle cx="12" cy="12" r="4.5" />
+        <circle cx="12" cy="12" r="1" />
+      </svg>
+    ),
+    title: "Competency Summary",
+    desc: "Track strengths, growth areas, and competency mastery across subjects.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" {...sw} style={{ color: "#f5a623" }}>
+        <path d="M9.5 18h5M10.5 21h3" />
+        <path d="M12 3a6 6 0 0 0-3.8 10.6c.7.6 1.1 1.3 1.2 2.4h5.2c.1-1.1.5-1.8 1.2-2.4A6 6 0 0 0 12 3Z" />
+      </svg>
+    ),
+    title: "Personalized Recommendations",
+    desc: "Receive AI-generated study tips and personalized improvement suggestions.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" {...sw} style={{ color: "#1b5cc4" }}>
+        <path d="M3 17l6-6 4 4 8-8" />
+        <path d="M15 7h6v6" />
+      </svg>
+    ),
+    title: "Adaptive Progress",
+    desc: "Monitor how assessment difficulty changes throughout adaptive assessments.",
+  },
+];
+
 export default function SchoolsPage() {
   return (
     <div className="page-home">
@@ -219,6 +286,32 @@ export default function SchoolsPage() {
                     width={40}
                     height={40}
                   />
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ============ Learner insights ============ */}
+        <section className="kd-section aw-section" id="learner-insights">
+          <img
+            className="kd-deco"
+            src="/images/sparkle-1.svg"
+            alt=""
+            aria-hidden="true"
+            style={{ left: "10%", top: 20, width: 54 }}
+          />
+          <div className="container">
+            <div className="kd-head">
+              <span className="kd-eyebrow">LEARNER INSIGHTS</span>
+              <h2>Empower every learner with personalized feedback</h2>
+            </div>
+            <div className="li-grid">
+              {learnerInsights.map(({ icon, title, desc }) => (
+                <article className="li-card" key={title}>
+                  {icon}
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
                 </article>
               ))}
             </div>
