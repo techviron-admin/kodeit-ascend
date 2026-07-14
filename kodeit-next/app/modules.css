@@ -183,7 +183,7 @@
   border-radius: 24px;
   padding: 22px 26px;
   display: grid;
-  grid-template-columns: minmax(240px, 300px) 1fr;
+  grid-template-columns: minmax(300px, 340px) 1fr;
 }
 .aw-left {
   display: flex;
@@ -212,7 +212,7 @@
 }
 .aw-chip {
   flex: 1 1 0;
-  min-width: 104px;
+  min-width: 92px;
   background: #fff;
   border: 1px solid #dfdfdf;
   border-radius: 14px;

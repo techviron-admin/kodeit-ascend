@@ -20,11 +20,7 @@ const extensions = [
     "for upper-grade literacy and applied reasoning measurement",
   ],
   ["ext-cefr.svg", "CEFR", "for English language proficiency banding (A1–C2)"],
-  [
-    "ext-uk.svg",
-    "UK National Curriculum",
-    "for British international schools",
-  ],
+  ["ext-uk.svg", "UK National Curriculum", "for British international schools"],
   [
     "ext-au.svg",
     "Australian Curriculum v9.0",
