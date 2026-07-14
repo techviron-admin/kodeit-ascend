@@ -15,16 +15,6 @@ const categories = [
     "Track students performance, progress, and learning outcomes.",
   ],
   [
-    "icon-teachers.svg",
-    "Teachers Reports",
-    "Evaluate teacher effectiveness and instructional impact.",
-  ],
-  [
-    "icon-teachers.svg",
-    "Teachers Reports",
-    "Evaluate teacher effectiveness and instructional impact.",
-  ],
-  [
     "icon-schools.svg",
     "School Reports",
     "Monitor school performance and key operational metrics.",

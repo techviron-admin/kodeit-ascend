@@ -241,10 +241,13 @@ export default function ProductPage() {
           <div className="container">
             <div className="pd-scale-box">
               <div>
-                <h2>Designed to scale with your institution</h2>
+                <h2>Deployable wherever your schools are</h2>
                 <p className="sub">
-                  Kodeit Ascend adapts to your needs&mdash;whether you&rsquo;re
-                  a single school or a large organization.
+                  Kodeit Ascend works across curricula (CCSS, NGSS, IB, UK, and
+                  national frameworks), languages, and connectivity contexts,
+                  from urban metros to low-bandwidth campuses. Paper-based
+                  delivery with bulk answer-sheet scanning extends the platform
+                  to every grade and classroom.
                 </p>
                 <Link href="/help#contact" className="btn-grad">
                   Contact Us

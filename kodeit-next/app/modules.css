@@ -183,7 +183,7 @@
   border-radius: 24px;
   padding: 22px 26px;
   display: grid;
-  grid-template-columns: minmax(280px, 340px) 1fr;
+  grid-template-columns: minmax(240px, 300px) 1fr;
 }
 .aw-left {
   display: flex;
@@ -212,7 +212,7 @@
 }
 .aw-chip {
   flex: 1 1 0;
-  min-width: 96px;
+  min-width: 104px;
   background: #fff;
   border: 1px solid #dfdfdf;
   border-radius: 14px;
@@ -222,7 +222,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 12px 6px;
+  padding: 12px 12px;
   text-align: center;
 }
 .aw-chip img {
@@ -232,6 +232,7 @@
 .aw-chip span {
   font-size: 15px;
   color: #021b2e;
+  white-space: nowrap;
 }
 .aw-results {
   width: 100%;
@@ -1050,6 +1051,20 @@
   .li-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- About page ---------- */
+.about-copy {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-copy p {
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--kd-body);
+}
+.about-copy p + p {
+  margin-top: 20px;
 }
 
 /* ============================================================

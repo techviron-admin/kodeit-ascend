@@ -78,7 +78,7 @@ export default function HomePage() {
           <div className="container">
             <div className="kd-head">
               <span className="kd-eyebrow">Platform</span>
-              <h2>One continuous measurement cycle, from design to decision</h2>
+              <h2>One platform to build, measure, and grow competency</h2>
               <p className="sub">
                 Kodeit Ascend replaces fragmented, single-event testing with a
                 continuous cycle: assessment design and delivery, AI-assisted
@@ -252,109 +252,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ============ Credibility ============ */}
-        <section className="kd-section" id="credibility">
-          <div className="container">
-            <div className="kd-head" style={{ marginBottom: 36 }}>
-              <span className="kd-eyebrow">Trusted at scale</span>
-              <h2>An education company, already deployed</h2>
-              <p className="sub">
-                When schools adopt Kodeit Ascend, they are partnering with an
-                education company whose products are already deployed across
-                500+ schools in 14+ countries — not a pure-play assessment
-                vendor.
-              </p>
-            </div>
-            <div className="md-band">
-              <div className="rp-stats">
-                <div className="rp-stat">
-                  <span className="ic">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M4 21V8l8-5 8 5v13" />
-                      <path d="M4 21h16M9 21v-6h6v6" />
-                    </svg>
-                  </span>
-                  <div>
-                    <span className="n">500+</span>
-                    <span className="l">Schools served</span>
-                  </div>
-                </div>
-                <div className="rp-stat">
-                  <span className="ic">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M3 12h18M12 3c2.5 2.4 3.9 5.6 3.9 9s-1.4 6.6-3.9 9c-2.5-2.4-3.9-5.6-3.9-9S9.5 5.4 12 3Z" />
-                    </svg>
-                  </span>
-                  <div>
-                    <span className="n">14+</span>
-                    <span className="l">Countries</span>
-                  </div>
-                </div>
-                <div className="rp-stat">
-                  <span className="ic">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <circle cx="12" cy="9" r="5" />
-                      <path d="m8.5 13.5-1.5 7 5-3 5 3-1.5-7" />
-                    </svg>
-                  </span>
-                  <div>
-                    <span className="n">ISTE</span>
-                    <span className="l">Recognized</span>
-                  </div>
-                </div>
-                <div className="rp-stat">
-                  <span className="ic">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M8 13 3.5 8.5 7 5l3 2h4l3-2 3.5 3.5L20 13" />
-                      <path d="M8 13v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-5" />
-                    </svg>
-                  </span>
-                  <div>
-                    <span className="n">McGraw Hill</span>
-                    <span className="l">Partnership</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p className="sub" style={{ textAlign: "center", marginTop: 24 }}>
-              Institutional clients including Maarif Training Academy.
-            </p>
-          </div>
-        </section>
-
         {/* ============ Benefits ============ */}
         <section className="kd-section" id="benefits">
           <img
@@ -382,14 +279,10 @@ export default function HomePage() {
                   sizes="(max-width: 980px) 100vw, 400px"
                 />
                 <span className="tag">Teachers</span>
-                <h3>
-                  AI-assisted grading with the reasoning, not just the score
-                </h3>
+                <h3>Reclaim the hours lost to manual grading</h3>
                 <p>
-                  Short answers and essays are graded using DOK level and
-                  content focus, with instant feedback to students after
-                  submission — and a clear view of which standards the class has
-                  mastered and which need re-teaching.
+                  AI scores the papers. Ascend transforms the results into
+                  learning intelligence.
                 </p>
                 <Link href="/assessments" className="card-link">
                   Learn
@@ -405,11 +298,12 @@ export default function HomePage() {
                   sizes="(max-width: 980px) 100vw, 400px"
                 />
                 <span className="tag">Students</span>
-                <h3>Every learner sees exactly where they stand</h3>
+                <h3>Paper or screen. One assessment ecosystem.</h3>
                 <p>
-                  After each assessment: question-by-question review, per-skill
-                  feedback, a personal growth trajectory, and AI-generated study
-                  guidance.
+                  Assessments can be delivered in print or online, with
+                  AI-powered scoring, competency mapping, and analytics applied
+                  consistently. Every result contributes to a single,
+                  comprehensive learner record.
                 </p>
                 <Link href="/competencies" className="card-link">
                   Learn
@@ -469,11 +363,6 @@ export default function HomePage() {
                 <div className="kd-step-body">
                   <span className="step-label">Step 1</span>
                   <h3>Set the competencies that define mastery</h3>
-                  <p>
-                    Select your framework. The system aligns every standard,
-                    domain, and sub-skill automatically. The map is drawn before
-                    you begin.
-                  </p>
                   <Link href="/competencies" className="card-link">
                     Learn
                     <Arrow />
@@ -491,12 +380,6 @@ export default function HomePage() {
                 <div className="kd-step-body">
                   <span className="step-label">Step 2</span>
                   <h3>Deploy in the mode the decision requires</h3>
-                  <p>
-                    Formative, summative, benchmark, or diagnostic; standard or
-                    adaptive delivery; on screen or on paper via print-ready OMR
-                    booklets. The same item bank and reporting layer power every
-                    mode.
-                  </p>
                   <Link href="/assessments" className="card-link">
                     Learn
                     <Arrow />
@@ -514,10 +397,6 @@ export default function HomePage() {
                 <div className="kd-step-body">
                   <span className="step-label">Step 3</span>
                   <h3>Analyze growth and act on the evidence</h3>
-                  <p>
-                    Watch the dashboards light up with real performance trends.
-                    No waiting. No guessing. Just the truth you need to lead.
-                  </p>
                   <Link href="/analytics" className="card-link">
                     Learn
                     <Arrow />

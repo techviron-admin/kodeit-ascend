@@ -127,9 +127,9 @@ export default function SiteHeader() {
             </a>
           </div>
           <div className="nav-item">
-            <a href="#" className="nav-link">
+            <Link href="/about" className="nav-link">
               About Us
-            </a>
+            </Link>
           </div>
         </nav>
         <div className="nav-actions">

@@ -61,7 +61,7 @@ export default function SiteFooter({ tint = false }) {
             </nav>
             <nav className="kd-foot-col" aria-label="Company">
               <h4>Company</h4>
-              <a href="#">About Us</a>
+              <Link href="/about">About Us</Link>
               <a href="#">Careers</a>
               <a href="#">Partners</a>
               <Link href="/help#contact">Contact Us</Link>
