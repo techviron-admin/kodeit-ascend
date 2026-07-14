@@ -117,11 +117,6 @@ export default function SiteHeader() {
             </div>
           </div>
           <div className="nav-item">
-            <a href="#" className="nav-link">
-              Solutions
-            </a>
-          </div>
-          <div className="nav-item">
             <Link href="/about" className="nav-link">
               About Us
             </Link>
