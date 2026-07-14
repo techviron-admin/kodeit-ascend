@@ -152,7 +152,7 @@ export default function ProductPage() {
                 streamline assessment, learning, and growth across your
                 organization.
               </p>
-              <Link href="/#pilot" className="btn-grad">
+              <Link href="/help#contact" className="btn-grad">
                 Book a Demo
               </Link>
             </div>

@@ -42,7 +42,7 @@ export default function HomePage() {
               over time, and generate actionable insight at the learner, class,
               school, and network level.
             </p>
-            <a href="#pilot" className="btn-grad">
+            <a href="/help#contact" className="btn-grad">
               Request a demo
             </a>
             <div className="kd-hero-img">
