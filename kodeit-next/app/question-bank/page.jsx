@@ -124,14 +124,6 @@ export default function QuestionBankPage() {
                     <h3>{title}</h3>
                     <p>{desc}</p>
                   </div>
-                  <img
-                    className="qb-arrow"
-                    src="/images/qb-arrow.svg"
-                    alt=""
-                    aria-hidden="true"
-                    width={48}
-                    height={48}
-                  />
                 </article>
               ))}
             </div>
