@@ -64,8 +64,6 @@ export default function SettingsPage() {
           sub="Configure schools, grades, subjects, competencies, and reporting from one place."
           primaryHref="/help#contact"
           primaryLabel="Book a Demo"
-          secondaryHref="/users"
-          secondaryLabel="Manage Users"
           imageAlt="Kodeit Ascend settings and administration"
         />
 

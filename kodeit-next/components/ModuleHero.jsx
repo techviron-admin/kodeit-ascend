@@ -44,10 +44,12 @@ export default function ModuleHero({
             <Link href={primaryHref} className="btn-grad">
               {primaryLabel}
             </Link>
-            <Link href={secondaryHref} className="link-orange">
-              {secondaryLabel}
-              <Arrow />
-            </Link>
+            {secondaryLabel && (
+              <Link href={secondaryHref} className="link-orange">
+                {secondaryLabel}
+                <Arrow />
+              </Link>
+            )}
           </div>
         </div>
         <div

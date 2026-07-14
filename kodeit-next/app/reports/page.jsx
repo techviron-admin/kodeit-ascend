@@ -58,8 +58,8 @@ export default function ReportsPage() {
           sub="Reports suitable for classroom action and regulatory submission. Statistical measures — average, range, standard deviation — accompany growth calculations at every level, so the same evidence serves the teacher, the board, and the regulator."
           primaryHref="#categories"
           primaryLabel="Explore Reports"
-          secondaryHref="/analytics"
-          secondaryLabel="View Reports"
+          secondaryHref="/help#contact"
+          secondaryLabel="Book a Demo"
           imageAlt="Kodeit Ascend reports dashboard"
         />
 
@@ -103,7 +103,6 @@ export default function ReportsPage() {
           sub="Export reports in multiple formats and share insights with your team."
           label="Export Reports"
         />
-
       </main>
       <SiteFooter />
     </div>
