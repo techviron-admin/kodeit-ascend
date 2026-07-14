@@ -45,12 +45,6 @@ export default function SiteFooter({ tint = false }) {
               <Link href="/analytics">Analytics</Link>
               <Link href="/settings">Integrations</Link>
             </nav>
-            <nav className="kd-foot-col" aria-label="Solutions">
-              <h4>Solutions</h4>
-              <Link href="/schools">For Schools</Link>
-              <Link href="/users">For Educators</Link>
-              <Link href="/users">For Students</Link>
-            </nav>
             <nav className="kd-foot-col" aria-label="Company">
               <h4>Company</h4>
               <Link href="/about">About Us</Link>
