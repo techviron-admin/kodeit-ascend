@@ -135,12 +135,8 @@ export default function HomePage() {
               </article>
             </div>
             <div className="kd-actions mt">
-              <Link href="/dashboard" className="btn-grad">
+              <Link href="/product" className="btn-grad">
                 Explore features
-              </Link>
-              <Link href="/analytics" className="link-orange">
-                View a demo
-                <Arrow />
               </Link>
             </div>
           </div>
