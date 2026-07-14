@@ -61,6 +61,7 @@ export default function ReportsPage() {
           secondaryHref="/help#contact"
           secondaryLabel="Book a Demo"
           imageAlt="Kodeit Ascend reports dashboard"
+          image="/images/reports-dashboard.webp"
         />
 
         {/* ============ Report categories ============ */}

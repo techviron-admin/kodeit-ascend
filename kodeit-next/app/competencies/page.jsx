@@ -48,6 +48,7 @@ export default function CompetenciesPage() {
           secondaryHref="#frameworks"
           secondaryLabel="Explore Frameworks"
           imageAlt="Kodeit Ascend competencies portal dashboard"
+          image="/images/competencies-dashboard.webp"
         />
 
         {/* ============ Built to extend ============ */}

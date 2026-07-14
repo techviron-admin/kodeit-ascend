@@ -186,6 +186,7 @@ export default function SchoolsPage() {
           secondaryHref="#reporting"
           secondaryLabel="Explore Features"
           imageAlt="Kodeit Ascend schools administration portal"
+          image="/images/schools-dashboard.webp"
         />
 
         {/* ============ School reporting ============ */}
