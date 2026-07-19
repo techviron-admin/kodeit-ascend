@@ -129,8 +129,8 @@ export default function AnalyticsPage() {
           primaryLabel="Explore Analytics"
           secondaryHref="/dashboard"
           secondaryLabel="View Dashboard"
-          imageAlt="Kodeit Ascend growth over time chart"
-          image="/images/analytics-growth.webp"
+          imageAlt="Kodeit Ascend analytics dashboard"
+          image="/images/hero-analytics.webp"
         />
 
         {/* ============ Insight explorer ============ */}

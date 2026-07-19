@@ -106,6 +106,7 @@ export default function UsersPage() {
           secondaryHref="/reports"
           secondaryLabel="View Reports"
           imageAlt="Kodeit Ascend user management portal"
+          image="/images/hero-users.webp"
         />
 
         {/* ============ User roles ============ */}

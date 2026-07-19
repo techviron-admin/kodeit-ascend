@@ -55,6 +55,7 @@ export default function QuestionBankPage() {
           secondaryHref="#explore"
           secondaryLabel="Explore Question Bank"
           imageAlt="Kodeit Ascend question bank portal dashboard"
+          image="/images/hero-question-bank.webp"
         />
 
         {/* ============ Stats band ============ */}

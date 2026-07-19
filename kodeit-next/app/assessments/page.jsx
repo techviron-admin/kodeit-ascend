@@ -71,6 +71,7 @@ export default function AssessmentsPage() {
           secondaryHref="/reports"
           secondaryLabel="View Reports"
           imageAlt="Kodeit Ascend assessment portal dashboard"
+          image="/images/hero-assessments.webp"
         />
 
         {/* ============ Assessment workflow ============ */}
