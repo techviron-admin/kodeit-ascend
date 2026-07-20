@@ -63,7 +63,7 @@ export default function ModuleHero({
             height={716}
             priority
             quality={90}
-            sizes="(max-width: 980px) 100vw, 640px"
+            sizes="(max-width: 980px) 100vw, 720px"
           />
         </div>
       </div>

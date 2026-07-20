@@ -41,8 +41,8 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 56px;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 40px;
   align-items: center;
 }
 .md-hero .kd-eyebrow {
